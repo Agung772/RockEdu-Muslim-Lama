@@ -1,0 +1,295 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &541683648503613432
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 541683648503613434}
+  - component: {fileID: 541683648503613433}
+  m_Layer: 0
+  m_Name: GameSave (0)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &541683648503613434
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541683648503613432}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 541683650243444191}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &541683648503613433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541683648503613432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558934986f808c54f8de1672500f852f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  codeSave: 0
+  namaPlayer: 
+  karakter: 
+  kelas: 
+  bab: 0
+  scoreConnectingTheDot: 0
+  scoreSpellingBee: 0
+  scoreBenarSalah: 0
+  scorePilihanGanda: 0
+  totalScore: 0
+  _NamaPlayer: NamaPlayer
+  _Karakter: Karakter
+  _Kelas: Kelas
+  _Bab: Bab
+  _ScoreConnectingTheDot: ScoreConnectingTheDot
+  _ScoreSpellingBee: ScoreSpellingBee
+  _ScoreBenarSalah: ScoreBenarSalah
+  _ScorePilihanGanda: ScorePilihanGanda
+--- !u!1 &541683648622437718
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 541683648622437719}
+  - component: {fileID: 541683648622437800}
+  m_Layer: 0
+  m_Name: GameSave (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &541683648622437719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541683648622437718}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 541683650243444191}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &541683648622437800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541683648622437718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558934986f808c54f8de1672500f852f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  codeSave: 2
+  namaPlayer: 
+  karakter: 
+  kelas: 
+  bab: 0
+  scoreConnectingTheDot: 0
+  scoreSpellingBee: 0
+  scoreBenarSalah: 0
+  scorePilihanGanda: 0
+  totalScore: 0
+  _NamaPlayer: NamaPlayer
+  _Karakter: Karakter
+  _Kelas: Kelas
+  _Bab: Bab
+  _ScoreConnectingTheDot: ScoreConnectingTheDot
+  _ScoreSpellingBee: ScoreSpellingBee
+  _ScoreBenarSalah: ScoreBenarSalah
+  _ScorePilihanGanda: ScorePilihanGanda
+--- !u!1 &541683649058786939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 541683649058786940}
+  - component: {fileID: 541683649058786941}
+  m_Layer: 0
+  m_Name: GameSave (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &541683649058786940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541683649058786939}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 541683650243444191}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &541683649058786941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541683649058786939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558934986f808c54f8de1672500f852f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  codeSave: 1
+  namaPlayer: 
+  karakter: 
+  kelas: 
+  bab: 0
+  scoreConnectingTheDot: 0
+  scoreSpellingBee: 0
+  scoreBenarSalah: 0
+  scorePilihanGanda: 0
+  totalScore: 0
+  _NamaPlayer: NamaPlayer
+  _Karakter: Karakter
+  _Kelas: Kelas
+  _Bab: Bab
+  _ScoreConnectingTheDot: ScoreConnectingTheDot
+  _ScoreSpellingBee: ScoreSpellingBee
+  _ScoreBenarSalah: ScoreBenarSalah
+  _ScorePilihanGanda: ScorePilihanGanda
+--- !u!1 &541683650243444189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 541683650243444191}
+  - component: {fileID: 541683650243444190}
+  m_Layer: 0
+  m_Name: SaveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &541683650243444191
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541683650243444189}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 541683648503613434}
+  - {fileID: 541683649058786940}
+  - {fileID: 541683648622437719}
+  - {fileID: 2075418337237794328}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &541683650243444190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541683650243444189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1bb599e45d272045b7c0f1f0eee9674, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  codeLoadSave: 0
+  GameSave: {fileID: 541683648503613433}
+--- !u!1 &3614230802029359884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2075418337237794328}
+  - component: {fileID: 4586083323995224791}
+  m_Layer: 0
+  m_Name: GameSave (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2075418337237794328
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3614230802029359884}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 541683650243444191}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4586083323995224791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3614230802029359884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558934986f808c54f8de1672500f852f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  codeSave: 3
+  namaPlayer: 
+  karakter: 
+  kelas: 
+  bab: 0
+  scoreConnectingTheDot: 0
+  scoreSpellingBee: 0
+  scoreBenarSalah: 0
+  scorePilihanGanda: 0
+  totalScore: 0
+  _NamaPlayer: NamaPlayer
+  _Karakter: Karakter
+  _Kelas: Kelas
+  _Bab: Bab
+  _ScoreConnectingTheDot: ScoreConnectingTheDot
+  _ScoreSpellingBee: ScoreSpellingBee
+  _ScoreBenarSalah: ScoreBenarSalah
+  _ScorePilihanGanda: ScorePilihanGanda
