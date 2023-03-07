@@ -11,7 +11,9 @@ public class DeleteSaveUI : MonoBehaviour
     public void YesButton()
     {
         SaveManager.instance.gameObject.transform.GetChild(codeSave).GetComponent<GameSave>().DeleteSave();
+        transform.parent.gameObject.GetComponent<LoadGameUI>().JumlahSave();
         loadButton.LoadTextUI();
+        loadButton.nama = "";
         gameObject.SetActive(false);
     }
 
