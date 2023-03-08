@@ -67,4 +67,39 @@ public class HurufController : MonoBehaviour
     {
         click = false;
     }
+
+    float timeForce;
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.GetComponent<HurufController>())
+        {
+            timeForce = 0;
+        }
+    }
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.collider.GetComponent<HurufController>())
+        {
+            timeForce += Time.deltaTime;
+            if (timeForce > 1)
+            {
+                GetComponent<BoxCollider>().isTrigger = true;
+            }
+
+        }
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.collider.GetComponent<HurufController>())
+        {
+            StartCoroutine(Coroutine());
+            IEnumerator Coroutine()
+            {
+                yield return new WaitForSeconds(0.5f);
+                GetComponent<BoxCollider>().isTrigger = false;
+            }
+
+        }
+    }
 }

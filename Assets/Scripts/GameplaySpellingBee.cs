@@ -38,6 +38,10 @@ public class GameplaySpellingBee : MonoBehaviour
 
     private void Start()
     {
+        //Load bab
+        bab = SaveManager.instance.GameSave.bab;
+        babList[bab].soal[0].SetActive(true);
+
         NextSoal(bab);
         BateraiUI();
         UrutanSoalUI();
@@ -48,8 +52,17 @@ public class GameplaySpellingBee : MonoBehaviour
         //Soal udah habis
         if (urutanSoal == babList[bab].soal.Length - 1)
         {
-            if (baterai == 2) ButtonManager.instance.SpawnScoreUI(3);
-            else if (baterai == 1) ButtonManager.instance.SpawnScoreUI(2);
+            if (baterai == 2)
+            {
+                ButtonManager.instance.SpawnScoreUI(3);
+                SaveManager.instance.GameSave.SaveScoreMiniGame(SaveManager.instance.GameSave._ScoreSpellingBee, 3);
+
+            }
+            else if (baterai == 1)
+            {
+                ButtonManager.instance.SpawnScoreUI(2);
+                SaveManager.instance.GameSave.SaveScoreMiniGame(SaveManager.instance.GameSave._ScoreSpellingBee, 2);
+            }
 
         }
         //Lanjut soal berikutnya
