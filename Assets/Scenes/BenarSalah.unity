@@ -795,16 +795,16 @@ MonoBehaviour:
     jawaban: BENAR
   - pertanyaan: Jika kita tidak sholat maka akan mendapat pahala
     jawaban: SALAH
-  - pertanyaan: Rukun islam wajib dilaksanakan orang islam
-    jawaban: BENAR
+  - pertanyaan: Rukun islam tidak wajib dilaksanakan orang islam
+    jawaban: SALAH
   - pertanyaan: Puasa yang wajib adalah ketika bulan ramadhan
     jawaban: BENAR
-  - pertanyaan: Haji adalah rukun islam ke 4
-    jawaban: SALAH
+  - pertanyaan: Asyhadu artinya aku bersaksi
+    jawaban: BENAR
   - pertanyaan: Ibadah haji dilaksanakan di kota Mekkah
     jawaban: BENAR
-  - pertanyaan: Puasa adalah rukun iman ke 5
-    jawaban: SALAH
+  - pertanyaan: Anna artinya sesungguhnya
+    jawaban: BENAR
   - pertanyaan: Anak muslim harus berbuat jahat ke semua orang
     jawaban: SALAH
   - pertanyaan: Syahadat ada 2 yaitu syahadat tauhid dan syahadat rasul
