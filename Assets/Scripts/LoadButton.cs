@@ -123,8 +123,8 @@ public class LoadButton : MonoBehaviour
         //Load text
         dataProfil.SetActive(true);
         slotKosong.SetActive(false);
-        namaPlayer.text = "Nama : " + SaveManager.instance.gameObject.transform.GetChild(codeSave).GetComponent<GameSave>().namaPlayer;
-        kelas.text = "Kelas : " + SaveManager.instance.gameObject.transform.GetChild(codeSave).GetComponent<GameSave>().kelas;
+        namaPlayer.text = SaveManager.instance.gameObject.transform.GetChild(codeSave).GetComponent<GameSave>().namaPlayer;
+        kelas.text = SaveManager.instance.gameObject.transform.GetChild(codeSave).GetComponent<GameSave>().kelas;
         totalBintang.text = "Total bintang : " + tempTotalSeluruh;
         waktuSave.text = SaveManager.instance.gameObject.transform.GetChild(codeSave).GetComponent<GameSave>().waktuSave;
         nama = SaveManager.instance.gameObject.transform.GetChild(codeSave).GetComponent<GameSave>().namaPlayer;
