@@ -48,6 +48,24 @@ public class HomeManager : MonoBehaviour
         karakter = label.captionText.text;
     }
 
+    Image kidoImage, inaImage;
+    public void InputKido(Image image)
+    {
+        kidoImage = image;
+        kidoImage.color = InputColor.instance.hijauMuda;
+        if (inaImage != null) inaImage.color = Color.white;
+
+        karakter = "Cowok";
+    }
+    public void InputIna(Image image)
+    {
+        inaImage = image;
+        inaImage.color = InputColor.instance.hijauMuda;
+        if (kidoImage != null) kidoImage.color = Color.white;
+
+        karakter = "Cewek";
+    }
+
     //Pembuatan akun / profil baru
     //Ketika load kosong maka akan diisi dengan yang baru dibuat
     public void SaveProfil()

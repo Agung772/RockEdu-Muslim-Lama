@@ -45,9 +45,14 @@ public class OptionManager : MonoBehaviour
 
     }
 
+
     public void VolumeValueBgm(float value)
     {
-        AudioManager.instance.VolumeValueBgm(value);
+        if (gameObject.activeInHierarchy)
+        {
+            AudioManager.instance.VolumeValueBgm(value);
+        }
+
     }
     public void RefrensBgm(Slider slider)
     {
@@ -55,7 +60,11 @@ public class OptionManager : MonoBehaviour
     }
     public void VolumeValueSfx(float value)
     {
-        AudioManager.instance.VolumeValueSfx(value);
+        if (gameObject.activeInHierarchy)
+        {
+            AudioManager.instance.VolumeValueSfx(value);
+        }
+
     }
     public void RefrensSfx(Slider slider)
     {

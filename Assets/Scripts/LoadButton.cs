@@ -125,7 +125,7 @@ public class LoadButton : MonoBehaviour
         slotKosong.SetActive(false);
         namaPlayer.text = SaveManager.instance.gameObject.transform.GetChild(codeSave).GetComponent<GameSave>().namaPlayer;
         kelas.text = SaveManager.instance.gameObject.transform.GetChild(codeSave).GetComponent<GameSave>().kelas;
-        totalBintang.text = "Total bintang : " + tempTotalSeluruh;
+        totalBintang.text = "" + tempTotalSeluruh;
         waktuSave.text = SaveManager.instance.gameObject.transform.GetChild(codeSave).GetComponent<GameSave>().waktuSave;
         nama = SaveManager.instance.gameObject.transform.GetChild(codeSave).GetComponent<GameSave>().namaPlayer;
 

@@ -28,10 +28,7 @@ public class AudioManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
-    }
 
-    private void Start()
-    {
         //Set volume untuk pertama kali
         if (PlayerPrefs.GetFloat(StartSaveVolume) == 0)
         {
@@ -39,14 +36,27 @@ public class AudioManager : MonoBehaviour
 
             PlayerPrefs.SetFloat(SaveBgm, 0.6f);
             PlayerPrefs.SetFloat(SaveSfx, 0.6f);
+
+            print("Set volume untuk pertama kali");
         }
 
 
         volumeAudioBgm = PlayerPrefs.GetFloat(SaveBgm);
         volumeAudioSfx = PlayerPrefs.GetFloat(SaveSfx);
 
+
+        print("audioSourceBgm " + PlayerPrefs.GetFloat(SaveBgm));
+        print("volumeAudioSfx " + PlayerPrefs.GetFloat(SaveSfx));
+
         audioSourceBgm.volume = volumeAudioBgm;
         audioSourceSfx.volume = volumeAudioSfx;
+    }
+
+
+    private void Start()
+    {
+
+
     }
 
     public void VolumeValueBgm(float value)

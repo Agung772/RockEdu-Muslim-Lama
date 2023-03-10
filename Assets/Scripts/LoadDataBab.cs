@@ -6,8 +6,12 @@ using UnityEngine.UI;
 public class LoadDataBab : MonoBehaviour
 {
     public int bab;
-    public Text totalBintangText;
+    public string namaBab;
+    public Text totalBintangText, namaBabText;
     public Text cTDText, sBText, pGText, BSText;
+
+    public Image bintangImage;
+    public Sprite[] bintangSprite;
 
     private void Start()
     {
@@ -29,6 +33,22 @@ public class LoadDataBab : MonoBehaviour
         int bS = PlayerPrefs.GetInt(SaveManager.instance.GameSave._ScoreBenarSalah + bab + SaveManager.instance.GameSave.codeSave);
 
         int totalBintang = cTD + sB + pG + bS;
+
+        namaBabText.text = namaBab;
         totalBintangText.text = "" + totalBintang;
+
+        //Ganti bintang background
+        if (totalBintang >= 10)
+        {
+            bintangImage.sprite = bintangSprite[2];
+        }
+        else if (totalBintang >= 5)
+        {
+            bintangImage.sprite = bintangSprite[1];
+        }
+        else if (totalBintang >= 0)
+        {
+            bintangImage.sprite = bintangSprite[0];
+        }
     }
 }
