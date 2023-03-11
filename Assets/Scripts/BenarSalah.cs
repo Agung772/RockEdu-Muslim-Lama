@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,9 +8,9 @@ public class BenarSalah : MonoBehaviour
 {
     public bool sudahDijawab;
     public string jawabanYangBenar;
-    public Text soalText;
+    public TextMeshProUGUI soalText;
 
-    public Image overlayImage, benarImage, salahImage, textBenar, textSalah;
+    public Image overlayImage, benarImage, salahImage;
 
     private void Start()
     {
@@ -46,14 +47,12 @@ public class BenarSalah : MonoBehaviour
             {
                 overlayImage.gameObject.SetActive(true);
                 overlayImage.color = InputColor.instance.greenTransparant;
-                textBenar.gameObject.SetActive(true);
                 GameplayBenarSalah.instance.benar++;
             }
             else
             {
                 overlayImage.gameObject.SetActive(true);
                 overlayImage.color = InputColor.instance.redTranparant;
-                textSalah.gameObject.SetActive(true);
                 GameplayBenarSalah.instance.salah++;
             }
 
