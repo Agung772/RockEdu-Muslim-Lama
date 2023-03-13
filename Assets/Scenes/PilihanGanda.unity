@@ -571,6 +571,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+--- !u!224 &291609849 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 853695893232460554, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+  m_PrefabInstance: {fileID: 268023798}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &635855550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -767,6 +772,7 @@ MonoBehaviour:
   totalPertanyaanText: {fileID: 216041625}
   pilihanGandaPrefab: {fileID: 1957271418741897191, guid: cea5edb9a0da650488ac06d27b694a1a, type: 3}
   spawnSoal: {fileID: 860985803}
+  unSpawnSoal: {fileID: 291609849}
   listPertanyaanBab1:
   - pertanyaan: 
     a: 

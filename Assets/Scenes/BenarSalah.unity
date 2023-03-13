@@ -487,7 +487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5885349456510217378, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5954098164234775677, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
       propertyPath: m_Sprite
@@ -889,6 +889,7 @@ MonoBehaviour:
   totalPertanyaanText: {fileID: 226036539}
   benarSalahPrefab: {fileID: 4447019742842860497, guid: feb7a2898b48bb245af6e5e345daa04d, type: 3}
   spawnSoal: {fileID: 860985803}
+  unSpawnSoal: {fileID: 1430264995}
   listPertanyaanBab1:
   - pertanyaan: 
     jawaban: 
@@ -1032,6 +1033,11 @@ MonoBehaviour:
   - pertanyaan: Iblis mau menghormati Nabi Adam dan Hawa
     jawaban: SALAH
   jumlahSoal: 0
+--- !u!224 &1430264995 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 853695893232460554, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+  m_PrefabInstance: {fileID: 268023798}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1627380121
 GameObject:
   m_ObjectHideFlags: 0

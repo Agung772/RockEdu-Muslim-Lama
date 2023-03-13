@@ -12,6 +12,19 @@ public class PilihanGanda : MonoBehaviour
     public Image[] jawabanImage;
     public TextMeshProUGUI[] jawabanText;
 
+    private IEnumerator Start()
+    {
+        jawabanImage[0].GetComponent<Button>().interactable = false;
+        jawabanImage[1].GetComponent<Button>().interactable = false;
+        jawabanImage[2].GetComponent<Button>().interactable = false;
+
+        yield return new WaitForSeconds(1.5f);
+
+        jawabanImage[0].GetComponent<Button>().interactable = true;
+        jawabanImage[1].GetComponent<Button>().interactable = true;
+        jawabanImage[2].GetComponent<Button>().interactable = true;
+
+    }
     public void SpawnPilihanGanda(string soal, string jawabanA, string jawabanB, string jawabanC)
     {
         soalTextPro.text = soal;
@@ -73,6 +86,7 @@ public class PilihanGanda : MonoBehaviour
 
             sudahDijawab = true;
             ButtonManager.instance.nextPertanyaanPilihanGanda = true;
+            ButtonManager.instance.nextPertanyaanPG.interactable = true;
         }
 
     }

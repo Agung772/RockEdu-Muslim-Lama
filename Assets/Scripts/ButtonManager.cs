@@ -30,6 +30,9 @@ public class ButtonManager : MonoBehaviour
         kelas.text = "Kelas : " + SaveManager.instance.GameSave.kelas;
         namaKarakter.text = "Nama karakter : " + SaveManager.instance.GameSave.karakter;
         bab.text = "Bab : " + SaveManager.instance.GameSave.bab;
+
+        nextPertanyaanPG.interactable = false;
+        nextPertanyaanBS.interactable = false;
     }
     private void Update()
     {
@@ -84,22 +87,26 @@ public class ButtonManager : MonoBehaviour
 
     }
 
+    public Button nextPertanyaanPG;
     public bool nextPertanyaanPilihanGanda;
     public void NextPertanyaanPilihanGanda()
     {
         if (nextPertanyaanPilihanGanda)
         {
             nextPertanyaanPilihanGanda = false;
+            nextPertanyaanPG.interactable = false;
             GameplayPilihanGanda.instance.NextPertanyaan();
         }
 
     }
+    public Button nextPertanyaanBS;
     public bool nextPertanyaanBenarSalah;
     public void NextPertanyaanBenarSalah()
     {
         if (nextPertanyaanBenarSalah)
         {
             nextPertanyaanBenarSalah = false;
+            nextPertanyaanBS.interactable = false;
             GameplayBenarSalah.instance.NextPertanyaan();
         }
 

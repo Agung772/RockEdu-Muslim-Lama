@@ -12,10 +12,20 @@ public class BenarSalah : MonoBehaviour
 
     public Image overlayImage, benarImage, salahImage;
 
-    private void Start()
+
+    private IEnumerator Start()
     {
         benarImage.color = InputColor.instance.green;
         salahImage.color = InputColor.instance.red;
+
+        benarImage.GetComponent<Button>().interactable = false;
+        salahImage.GetComponent<Button>().interactable = false;
+
+        yield return new WaitForSeconds(1.5f);
+
+        benarImage.GetComponent<Button>().interactable = true;
+        salahImage.GetComponent<Button>().interactable = true;
+
     }
 
     public void SpawnBenarSalah(string soal, string jawaban)
@@ -58,6 +68,7 @@ public class BenarSalah : MonoBehaviour
 
             sudahDijawab = true;
             ButtonManager.instance.nextPertanyaanBenarSalah = true;
+            ButtonManager.instance.nextPertanyaanBS.interactable = true;
 
 
             //Next pertanyaan

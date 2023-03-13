@@ -30,7 +30,11 @@ public class OpeningTextMiniGame : MonoBehaviour
     {
         if (Input.anyKeyDown && clickTextKedua)
         {
-            AnimasiManager.instance.AnimasiScreenCTD(false);
+            if (AnimasiManager.instance.animasiScreenCTD.gameObject.activeInHierarchy)
+            {
+                AnimasiManager.instance.AnimasiScreenCTD(false);
+            }
+
 
             gameObject.SetActive(false);
 

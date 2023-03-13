@@ -13,7 +13,7 @@ public class GameplayPilihanGanda : MonoBehaviour
 
     public Text totalPertanyaanText;
     public GameObject pilihanGandaPrefab;
-    public Transform spawnSoal;
+    public Transform spawnSoal, unSpawnSoal;
 
 
     [Serializable]
@@ -84,7 +84,9 @@ public class GameplayPilihanGanda : MonoBehaviour
 
             if (spawnSoal.childCount != 0)
             {
-                Destroy(spawnSoal.GetChild(0).gameObject);
+                spawnSoal.GetChild(0).SetParent(unSpawnSoal);
+                unSpawnSoal.GetChild(0).GetComponent<Animator>().SetTrigger("Exit");
+                Destroy(unSpawnSoal.GetChild(0).gameObject, 1.5f);
             }
 
             urutanPertanyaan++;

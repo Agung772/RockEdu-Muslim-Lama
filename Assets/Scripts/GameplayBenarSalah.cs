@@ -14,7 +14,7 @@ public class GameplayBenarSalah : MonoBehaviour
 
     public TextMeshProUGUI totalPertanyaanText;
     public GameObject benarSalahPrefab;
-    public Transform spawnSoal;
+    public Transform spawnSoal, unSpawnSoal;
 
 
     [Serializable]
@@ -51,6 +51,7 @@ public class GameplayBenarSalah : MonoBehaviour
 
         NextPertanyaan();
     }
+
     //Memunculkan pertanyaan berdasarkan bab
     public void NextPertanyaan()
     {
@@ -87,7 +88,10 @@ public class GameplayBenarSalah : MonoBehaviour
 
             if (spawnSoal.childCount != 0)
             {
-                Destroy(spawnSoal.GetChild(0).gameObject);
+                spawnSoal.GetChild(0).SetParent(unSpawnSoal);
+                unSpawnSoal.GetChild(0).GetComponent<Animator>().SetTrigger("Exit");
+                Destroy(unSpawnSoal.GetChild(0).gameObject, 1.5f);
+
             }
 
             urutanPertanyaan++;

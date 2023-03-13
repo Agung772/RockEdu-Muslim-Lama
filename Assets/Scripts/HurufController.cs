@@ -20,7 +20,7 @@ public class HurufController : MonoBehaviour
         if (!hurufAktif)
         {
             Destroy(GetComponent<Rigidbody>());
-            Destroy(GetComponent<HurufController>());
+            //Destroy(GetComponent<HurufController>());
         }
     }
 
@@ -31,6 +31,8 @@ public class HurufController : MonoBehaviour
 
     private void Update()
     {
+        if (!hurufAktif) return;
+
         if (back)
         {
             GetComponent<BoxCollider>().isTrigger = true;
@@ -53,18 +55,24 @@ public class HurufController : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (!hurufAktif) return;
+
         click = true;
         mousePosition = Input.mousePosition - GetMousePos();
     }
 
     private void OnMouseDrag()
     {
+        if (!hurufAktif) return;
+
         transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition - mousePosition);
         GetComponent<Rigidbody>().velocity = Vector3.zero;
     }
 
     private void OnMouseUp()
     {
+        if (!hurufAktif) return;
+
         click = false;
     }
 
@@ -72,6 +80,8 @@ public class HurufController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (!hurufAktif) return;
+
         if (collision.collider.GetComponent<HurufController>())
         {
             timeForce = 0;
@@ -79,20 +89,30 @@ public class HurufController : MonoBehaviour
     }
     private void OnCollisionStay(Collision collision)
     {
+        if (!hurufAktif) return;
+
         if (collision.collider.GetComponent<HurufController>())
         {
             timeForce += Time.deltaTime;
             if (timeForce > 1)
             {
+                int random = Random.Range(1, 3);
+                if (random == 1) GetComponent<Rigidbody>().velocity = new Vector3(-2, 7, 0);
+                else GetComponent<Rigidbody>().velocity = new Vector3(2, 7, 0);
+
                 GetComponent<BoxCollider>().isTrigger = true;
+
             }
 
         }
     }
     private void OnCollisionExit(Collision collision)
     {
+        if (!hurufAktif) return;
+
         if (collision.collider.GetComponent<HurufController>())
         {
+            //GetComponent<Rigidbody>().velocity = Vector3.zero;
             StartCoroutine(Coroutine());
             IEnumerator Coroutine()
             {

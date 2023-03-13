@@ -538,6 +538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1858609016954690633}
   - component: {fileID: 6852766280145217567}
+  - component: {fileID: 6886475840706529416}
   m_Layer: 5
   m_Name: PilihanGanda
   m_TagString: Untagged
@@ -594,6 +595,25 @@ MonoBehaviour:
   - {fileID: 8493855797739472528}
   - {fileID: 1216496819420550812}
   - {fileID: 5877053619921000887}
+--- !u!95 &6886475840706529416
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957271418741897191}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d8dbd8f27684b7545aa218b1a27c95d7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2197483165563198764
 GameObject:
   m_ObjectHideFlags: 0
