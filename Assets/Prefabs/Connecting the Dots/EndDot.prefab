@@ -48,9 +48,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   berwarnaDiawal: 0
+  tidakDiAcak: 0
   codeDot: 
   perluBerapaLine: 1
-  boxColorDefault: {fileID: 21300000, guid: 6d762173dfaa04e4ca95432155cea352, type: 3}
+  boxColorDefault: {fileID: 21300000, guid: f74fbf8e3253164439b6d9db30829ec6, type: 3}
   boxColor: {fileID: 6448174588453754333}
   animasiTutupKotak: {fileID: 1706577264145363045}
 --- !u!135 &22121275032598760
@@ -64,7 +65,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.88
+  m_Radius: 0.73
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1706577264145363045
 GameObject:
@@ -92,7 +93,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706577264145363045}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.7, y: -0.2, z: -0.2}
+  m_LocalPosition: {x: 3.4, y: -0.22, z: -0.2}
   m_LocalScale: {x: 2.5, y: 2.7, z: 1}
   m_Children: []
   m_Father: {fileID: 22121275032598759}
@@ -192,8 +193,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5386491487330525548}
-  m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
-  m_LocalPosition: {x: 3.37, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.0699997, y: -0.019999996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 22121275032598759}
@@ -239,12 +240,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 22496917c0c510d4090aaf0a8dc33920, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 126e0b40046abd449a38d396e87eb0a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.88, y: 2.03}
+  m_Size: {x: 6.8900003, y: 3.0614748}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -275,8 +276,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7317175381411087538}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.709999, y: -0.28, z: -0.1}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: 3.409999, y: -0.3, z: -0.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 22121275032598759}
   m_RootOrder: 2

@@ -53,8 +53,8 @@ public class DotController : MonoBehaviour
             boxColorClear = boxColor.sprite;
             boxColor.sprite = boxColorDefault;
 
-            lineRenderer.startColor = InputColor.instance.grey;
-            lineRenderer.endColor = InputColor.instance.grey;
+            lineRenderer.startColor = InputColor.instance.defaultDot;
+            lineRenderer.endColor = InputColor.instance.defaultDot;
         }
         else
         {
