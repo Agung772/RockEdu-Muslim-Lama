@@ -71431,7 +71431,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: e15b27cc35232ea4eb100a28c04b0196, type: 3}
     - target: {fileID: 4818400865989489366, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4854818089991814072, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
       propertyPath: m_AnchorMax.x
@@ -71531,7 +71531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7626331154545775473, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7856856832089240234, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
       propertyPath: namaScene
