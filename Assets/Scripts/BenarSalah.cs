@@ -15,8 +15,8 @@ public class BenarSalah : MonoBehaviour
 
     private IEnumerator Start()
     {
-        benarImage.color = InputColor.instance.green;
-        salahImage.color = InputColor.instance.red;
+        benarImage.color = InputColor.instance.hijauBS;
+        salahImage.color = InputColor.instance.merahBS;
 
         benarImage.GetComponent<Button>().interactable = false;
         salahImage.GetComponent<Button>().interactable = false;
@@ -40,14 +40,14 @@ public class BenarSalah : MonoBehaviour
 
         if (!button.GetComponent<ButtonScript>().hasClick)
         {
-            benarImage.color = InputColor.instance.green;
-            salahImage.color = InputColor.instance.red;
+            benarImage.color = InputColor.instance.hijauBS;
+            salahImage.color = InputColor.instance.merahBS;
 
             benarImage.gameObject.GetComponent<ButtonScript>().hasClick = false;
             salahImage.gameObject.GetComponent<ButtonScript>().hasClick = false;
 
             button.GetComponent<ButtonScript>().hasClick = true;
-            button.GetComponent<Image>().color = InputColor.instance.blue;
+            button.GetComponent<Image>().color = InputColor.instance.biruBS;
         }
 
         //Benar salah jawaban
