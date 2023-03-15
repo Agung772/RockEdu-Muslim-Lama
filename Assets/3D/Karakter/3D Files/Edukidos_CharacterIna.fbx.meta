@@ -1,59 +1,50 @@
 fileFormatVersion: 2
-guid: 1a44708f7bc9a4d46b157c6affc89353
+guid: 9d244e5225af9884f94f6532a32dfa97
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: 6168792214298814606
-    second: Kido_Tegap
+      74: -4871271698641839335
+    second: Ina _TPose
   - first:
-      74: -1139642186868475778
-    second: Kido_TPose
+      74: 8413395467847736332
+    second: Ina_Interact
   - first:
-      74: 4985565684396498728
-    second: Kido_Idle
+      74: 8189032841691478829
+    second: Ina_Cheer
   - first:
-      74: -1487814673944416058
-    second: Kido_Special Interact
+      74: 6862755102575564008
+    second: Ina_Sad
   - first:
-      74: 4616570864910741520
-    second: Kido_Walking
+      74: 6122406375127263218
+    second: Ina_Idle
   - first:
-      74: -2954507002687127291
-    second: Kido_Cheer
+      74: 588498479725569617
+    second: Ina_Walking
   - first:
-      74: -4705841708833310897
-    second: Kido_Interact
+      74: 3042146567680214374
+    second: rig.001|Ina _TPose
   - first:
-      74: 5014710640839388679
-    second: Kido_Sad
+      74: 9200027177524660808
+    second: rig.001|Ina_Cheer
   - first:
-      74: -1421787293683415015
-    second: rig|Kido_Cheer
+      74: -2948776848292550740
+    second: rig.001|Ina_Idle
   - first:
-      74: -6645111124036525648
-    second: rig|Kido_Idle
+      74: -8175142891436080244
+    second: rig.001|Ina_Interact
   - first:
-      74: -6390221187606513573
-    second: rig|Kido_Interact
+      74: 2329442472774732201
+    second: rig.001|Ina_Sad
   - first:
-      74: -5941176237747032257
-    second: rig|Kido_Sad
+      74: -3733471653814341639
+    second: rig.001|Ina_Stand
   - first:
-      74: -6783043787844305639
-    second: rig|Kido_Special Interact
+      74: -1576811259986736256
+    second: rig.001|Ina_Walking
   - first:
-      74: -4380632604106984071
-    second: rig|Kido_Tegap
-  - first:
-      74: 4962552900983056083
-    second: rig|Kido_TPose
-  - first:
-      74: 9121227076569460993
-    second: rig|Kido_Walking
-  - first:
-      74: -6526920640576705581
-    second: rig|Kido_Wave
+      74: 1450679661737809047
+    second: rig.001|Ina_Wave
   externalObjects: {}
   materials:
     materialImportMode: 2
