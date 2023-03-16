@@ -70,4 +70,8 @@ public class OptionManager : MonoBehaviour
     {
         AudioManager.instance.RefrensSfx(slider);
     }
+
+    public void BgmTester() { if (gameObject.activeInHierarchy) AudioManager.instance.BgmTester(); }
+    public void SfxTester() { if (gameObject.activeInHierarchy) AudioManager.instance.SfxTester(); }
+
 }

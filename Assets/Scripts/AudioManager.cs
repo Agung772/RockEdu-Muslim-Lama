@@ -64,6 +64,8 @@ public class AudioManager : MonoBehaviour
         volumeAudioBgm = value;
         audioSourceBgm.volume = value;
         PlayerPrefs.SetFloat(SaveBgm, volumeAudioBgm);
+
+
     }
     public void RefrensBgm(Slider slider)
     {
@@ -84,10 +86,11 @@ public class AudioManager : MonoBehaviour
     }
 
 
-
+    //Audio BGM
     public void BgmConnectTheDots() { audioSourceBgm.clip = bgmConnectTheDots; audioSourceBgm.Play(); }
 
 
+    //Audio SFX
     public void SfxScore() { if (sfxScore != null) audioSourceSfx.PlayOneShot(sfxScore); }
     public void SfxGameOver() { if (sfxGameOver != null) audioSourceSfx.PlayOneShot(sfxGameOver); }
     public void SfxHoldClick() { if (sfxHoldClick != null) audioSourceSfx.PlayOneShot(sfxHoldClick); }
@@ -96,5 +99,10 @@ public class AudioManager : MonoBehaviour
     public void SfxUnpause() { if (sfxUnpause != null) audioSourceSfx.PlayOneShot(sfxUnpause); }
     public void SfxBenar() { if (sfxBenar != null) audioSourceSfx.PlayOneShot(sfxBenar); }
     public void SfxSalah() { if (sfxSalah != null) audioSourceSfx.PlayOneShot(sfxSalah); }
+
+
+    //TesterVolume
+    public void BgmTester() { if (sfxPause != null) audioSourceBgm.PlayOneShot(sfxPause); }
+    public void SfxTester() { if (sfxPause != null) audioSourceSfx.PlayOneShot(sfxPause); }
 
 }
