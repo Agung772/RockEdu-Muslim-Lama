@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 144687281152937493}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.7800002, y: -0.19, z: -0.2}
+  m_LocalPosition: {x: -4.02, y: -0.19, z: -0.2}
   m_LocalScale: {x: 2.5, y: 2.7, z: 1}
   m_Children: []
   m_Father: {fileID: 8914092167546262552}
@@ -205,7 +205,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5284936200063573072}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.81, y: 0, z: -0.1}
+  m_LocalPosition: {x: -4.05, y: 0, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8914092167546262552}
@@ -256,10 +256,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.2524137, y: 4.76}
+  m_Size: {x: 1.9899999, y: 3.9415085}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &8148505266004331669
@@ -287,7 +287,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8148505266004331669}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -2.5200002, y: 0, z: 0}
+  m_LocalPosition: {x: -2.76, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8914092167546262552}
@@ -333,7 +333,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fe8009f71133a534c8dcc4c110974c17, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 47149768593daa24894f5617466acf3c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -531,7 +531,7 @@ MonoBehaviour:
   target: {fileID: 9116735891259730545}
   setPositionEnd: {fileID: 1936267676315699985}
   lineRenderer: {fileID: 8914092166518434826}
-  boxColorDefault: {fileID: 21300000, guid: f74fbf8e3253164439b6d9db30829ec6, type: 3}
+  boxColorDefault: {fileID: 21300000, guid: 5e93026d0b9203444b3ef4690d580de0, type: 3}
   boxColor: {fileID: 1923472420783607326}
   animasiTutupKotak: {fileID: 144687281152937493}
   particleSalah: {fileID: 5924889964983399126}

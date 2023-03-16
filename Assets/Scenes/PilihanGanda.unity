@@ -529,6 +529,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 1080
       objectReference: {fileID: 0}
+    - target: {fileID: 6141143491499206811, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PindahScene
+      objectReference: {fileID: 0}
     - target: {fileID: 6206581810193276385, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1068,7 +1072,7 @@ MonoBehaviour:
     a: Shalat
     b: Zakat
     c: Haji
-  - pertanyaan: Berapa kali kita shalat semalam? (Sebutkan shalat apa saja ke gurumu!)
+  - pertanyaan: Berapa kali kita shalat sehari? (Sebutkan shalat apa saja ke gurumu!)
     a: 5
     b: 3
     c: 4
@@ -1103,9 +1107,9 @@ MonoBehaviour:
     b: 
     c: 
   - pertanyaan: Surah Al-Ikhlas artinya?
-    a: Keesaan Allah SWT
+    a: Bersih hati
     b: Bersih pikiran
-    c: Bersih hati
+    c: Keesaan Allah SWT
   - pertanyaan: Berapa jumlah ayat surah Al-Ikhlas?
     a: 4
     b: 5
@@ -1168,7 +1172,7 @@ MonoBehaviour:
     a: Waktu
     b: Ilmu
     c: Sosial
-  - pertanyaan: Anak yang dsiplin akan menjadi anak yang
+  - pertanyaan: Anak yang disiplin akan menjadi anak yang
     a: Percaya diri
     b: Pemalu
     c: Lalai
@@ -1219,7 +1223,7 @@ MonoBehaviour:
     a: Jabal Rahmah
     b: Makkah
     c: Jabal Nur
-  - pertanyaan: Nabi ADam diciptakan dari
+  - pertanyaan: Nabi Adam diciptakan dari
     a: Tanah
     b: Tulang rusuk Hawa
     c: Cahaya

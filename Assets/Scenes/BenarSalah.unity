@@ -1108,15 +1108,15 @@ MonoBehaviour:
   listPertanyaanBab1:
   - pertanyaan: 
     jawaban: 
-  - pertanyaan: Kita harus mencintai al-quran
+  - pertanyaan: Kita harus mencintai Al Quran
     jawaban: BENAR
-  - pertanyaan: Kita harus malas membaca Al-quran
+  - pertanyaan: Kita harus malas membaca Al Quran
     jawaban: SALAH
-  - pertanyaan: Al-quran adalah kitap suci umat islam
+  - pertanyaan: Al Quran adalah kitab suci umat islam
     jawaban: BENAR
-  - pertanyaan: Membaca alqur-an mendapatkan pahala
+  - pertanyaan: Membaca Al Quran mendapatkan pahala
     jawaban: BENAR
-  - pertanyaan: Membaca Al-quran dibenci Allah
+  - pertanyaan: Membaca Al Quran dibenci Allah
     jawaban: SALAH
   listPertanyaanBab2:
   - pertanyaan: 
@@ -1166,7 +1166,7 @@ MonoBehaviour:
     jawaban: SALAH
   - pertanyaan: Syahadat ada 2 yaitu syahadat tauhid dan syahadat rasul
     jawaban: BENAR
-  - pertanyaan: Orang yang masuk isalm tidak diwajibkan membaca syahadat
+  - pertanyaan: Orang yang masuk islam tidak diwajibkan membaca syahadat
     jawaban: SALAH
   listPertanyaanBab5:
   - pertanyaan: 
@@ -1199,11 +1199,11 @@ MonoBehaviour:
     jawaban: 
   - pertanyaan: Nabi Muhammad SAW tidak mencintai umatnya
     jawaban: SALAH
-  - pertanyaan: KIta harus membenci seluruh teman kita
+  - pertanyaan: Kita harus membenci seluruh teman kita
     jawaban: SALAH
   - pertanyaan: Asmaulhusna dibaca ketika berdo'a
     jawaban: BENAR
-  - pertanyaan: Yang mendapatkan ksaih sayang dari Allah SWT adalah mahkluknya
+  - pertanyaan: Yang mendapatkan kasih sayang dari Allah SWT adalah mahkluknya
     jawaban: BENAR
   - pertanyaan: Allah SWT Menyayangi orang yang beriman
     jawaban: BENAR
@@ -1212,9 +1212,9 @@ MonoBehaviour:
     jawaban: 
   - pertanyaan: Berjabat tangan harus menggunakan tangan kanan
     jawaban: BENAR
-  - pertanyaan: Manusia bukan mkhluk sosial
+  - pertanyaan: Manusia bukan makhluk sosial
     jawaban: SALAH
-  - pertanyaan: Ketika berterima kasih kita hrus senyum
+  - pertanyaan: Ketika berterima kasih kita harus senyum
     jawaban: BENAR
   - pertanyaan: Pramuka tidak melatih hidup disiplin
     jawaban: SALAH
@@ -1227,7 +1227,7 @@ MonoBehaviour:
     jawaban: BENAR
   - pertanyaan: Kita boleh bertayamum jika ada air
     jawaban: SALAH
-  - pertanyaan: JIka tak sengaja kentut ketika shalat maka shalatnya tidak akan batal
+  - pertanyaan: Jika tak sengaja kentut ketika shalat maka shalatnya tidak akan batal
     jawaban: SALAH
   - pertanyaan: Berwudu menggunakan air yang bersih dan suci
     jawaban: BENAR
@@ -1236,9 +1236,9 @@ MonoBehaviour:
   listPertanyaanBab10:
   - pertanyaan: 
     jawaban: 
-  - pertanyaan: KIta harus meminta maad jika melakukan kesalahan
+  - pertanyaan: Kita harus meminta maaf jika melakukan kesalahan
     jawaban: BENAR
-  - pertanyaan: Nami muhammad SAW adalah manusia pertama
+  - pertanyaan: Nabi muhammad SAW adalah manusia pertama
     jawaban: SALAH
   - pertanyaan: Ketika mendapat cobaan kita harus bersikap sabar dan ikhlas
     jawaban: BENAR

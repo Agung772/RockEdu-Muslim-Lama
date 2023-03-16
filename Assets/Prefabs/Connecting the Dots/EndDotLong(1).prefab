@@ -51,7 +51,7 @@ MonoBehaviour:
   tidakDiAcak: 0
   codeDot: 1
   perluBerapaLine: 1
-  boxColorDefault: {fileID: 21300000, guid: f3bfc7c286259d445b379887bd33d1e5, type: 3}
+  boxColorDefault: {fileID: 21300000, guid: cf49098b5553b394b890931ca58cc8a9, type: 3}
   boxColor: {fileID: 9091533653432008499}
   animasiTutupKotak: {fileID: 4441744671915658936}
 --- !u!135 &2817439177688584710
@@ -93,7 +93,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4441744671915658936}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.9300013, y: -0.119999826, z: -0.2}
+  m_LocalPosition: {x: 5.670001, y: -0.019999921, z: -0.2}
   m_LocalScale: {x: 2.6, y: 2.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2817439177688584713}
@@ -194,7 +194,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4817951179882606172}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.01, y: -0.15, z: -0.1}
+  m_LocalPosition: {x: 5.75, y: -0.05, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2817439177688584713}
@@ -248,7 +248,7 @@ SpriteRenderer:
   m_Size: {x: 5.2524137, y: 4.76}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &7896974361711479682
@@ -276,7 +276,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7896974361711479682}
   m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
-  m_LocalPosition: {x: 3.6500008, y: 0.10000017, z: 0}
+  m_LocalPosition: {x: 4.3900003, y: 0.20000008, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 2817439177688584713}
@@ -322,7 +322,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f3bfc7c286259d445b379887bd33d1e5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5090649faea86d14980f3592b011aed3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

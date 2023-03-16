@@ -37,10 +37,6 @@ public class GameplayPilihanGanda : MonoBehaviour
     private void Awake()
     {
         instance = this;
-
-        print(listPertanyaanBab1.Count / 2);
-
-
     }
 
     private void Start()
@@ -66,7 +62,7 @@ public class GameplayPilihanGanda : MonoBehaviour
                 ButtonManager.instance.SpawnScoreUI(1);
                 SaveManager.instance.GameSave.SaveScoreMiniGame(SaveManager.instance.GameSave._ScorePilihanGanda, 1);
             }
-            else if (benar < listPertanyaanBab1.Count - 2)
+            else if (benar <= listPertanyaanBab1.Count - 2)
             {
                 ButtonManager.instance.SpawnScoreUI(2);
                 SaveManager.instance.GameSave.SaveScoreMiniGame(SaveManager.instance.GameSave._ScorePilihanGanda, 2);
