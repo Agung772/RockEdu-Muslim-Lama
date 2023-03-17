@@ -12,6 +12,8 @@ public class PlayerControllerMGPF : MonoBehaviour
     public GameObject cowok, cewek;
     public AnimatorKarakter animatorKarakter;
 
+    public LineRenderer displayRute;
+
 
     RaycastHit hit;
     string conditionAnimasi;
@@ -44,6 +46,13 @@ public class PlayerControllerMGPF : MonoBehaviour
         {
             DestroyDestination();
         }
+
+        if (navMeshAgent.hasPath)
+        {
+            DisplayRute();
+        }
+
+
 
         //Animasi
         if (navMeshAgent.remainingDistance == 0 && conditionAnimasi != "Idle")
@@ -94,6 +103,25 @@ public class PlayerControllerMGPF : MonoBehaviour
             Destroy(distinationObject);
         }
 
+    }
+
+    //Tampilan rute
+    void DisplayRute()
+    {
+        displayRute.positionCount = navMeshAgent.path.corners.Length;
+        displayRute.SetPosition(0, transform.position);
+
+        if (navMeshAgent.path.corners.Length < 2)
+        {
+            return;
+        }
+
+        for (int i = 0; i < navMeshAgent.path.corners.Length; i++)
+        {
+            var corners = navMeshAgent.path.corners[i];
+            Vector3 pointPosition = new Vector3(corners.x, corners.y + 0.1f, corners.z);
+            displayRute.SetPosition(i, pointPosition);
+        }
     }
 
     //Load save an
