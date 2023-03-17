@@ -376,7 +376,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2c56f7ccb71599648850e7c5d38b3c19, type: 3}
-    m_FontSize: 45
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
@@ -387,7 +387,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: BAB 1
 --- !u!1 &5083905240890325561
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,8 +541,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29992f3723fb2d1419f5cc49396a1312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bab: 0
-  namaBab: 
+  bab: 1
+  namaBab: ROCKET Cinta Al-Quran
   totalBintangText: {fileID: 6153114324353386289}
   namaBabText: {fileID: 4829612692420227898}
   cTDText: {fileID: 1508161600952340059}
@@ -663,13 +663,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7154574193455116226}
+  - {fileID: 3065931882145504157}
   m_Father: {fileID: 8678477335973740087}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -273}
-  m_SizeDelta: {x: 250, y: 100}
+  m_AnchoredPosition: {x: 0, y: -257}
+  m_SizeDelta: {x: 343.6027, y: 132}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &590558753213512850
 CanvasRenderer:
@@ -743,8 +744,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00093079, y: -0.0003643}
-  m_SizeDelta: {x: 229, y: 78.2}
+  m_AnchoredPosition: {x: -1.8498, y: -25.549988}
+  m_SizeDelta: {x: 301.76, y: 51.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3225986427976479482
 CanvasRenderer:
@@ -788,6 +789,85 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Isi di script
+--- !u!1 &7999383601137293508
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3065931882145504157}
+  - component: {fileID: 8614090324060527119}
+  - component: {fileID: 7854924619304103260}
+  m_Layer: 5
+  m_Name: NamaBabText (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3065931882145504157
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7999383601137293508}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9052997201782485952}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000015255, y: 25.549988}
+  m_SizeDelta: {x: 229, y: 51.1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8614090324060527119
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7999383601137293508}
+  m_CullTransparentMesh: 1
+--- !u!114 &7854924619304103260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7999383601137293508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 7295eb833c6d6db4599ad7f29867eacc, type: 3}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Roket
 --- !u!1 &8241297887754823593
 GameObject:
   m_ObjectHideFlags: 0
