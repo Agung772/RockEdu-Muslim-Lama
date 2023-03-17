@@ -31,7 +31,7 @@ public class MiniGame : MonoBehaviour
         if (Vector3.Distance(player.position, transform.position) < 3)
         {
             textCanva.SetActive(true);
-            textCanva.transform.GetChild(0).gameObject.GetComponent<Text>().text = "Tekan Tombol dibawah untuk masuk ke game " + namaText;
+            textCanva.transform.GetChild(1).gameObject.GetComponent<Text>().text = "Tekan Tombol dibawah untuk masuk ke game " + namaText;
             ButtonInteract.instance.gameObject.SetActive(true);
             ButtonInteract.instance.SceneMiniGame(namaMiniGame.ToString());
         }

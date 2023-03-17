@@ -6,17 +6,30 @@ using UnityEngine.UI;
 public class AnimasiButton : MonoBehaviour
 {
     RectTransform rectTransform;
-    float x, y;
+
+    bool start;
+    float minX, maxX;
+    float minY, maxY;
 
     public void PointerDown()
     {
         rectTransform = GetComponent<RectTransform>();
-        x = rectTransform.sizeDelta.x;
-        y = rectTransform.sizeDelta.y;
-        rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x * 1.2f, rectTransform.sizeDelta.y * 1.2f);
+
+        if (!start)
+        {
+            start = true;
+
+            minX = rectTransform.sizeDelta.x;
+            maxX = rectTransform.sizeDelta.x * 1.2f;
+
+            minY = rectTransform.sizeDelta.y;
+            maxY = rectTransform.sizeDelta.y * 1.2f;
+        }
+
+        rectTransform.sizeDelta = new Vector2(maxX, maxY);
     }
     public void PointerUp()
     {
-        rectTransform.sizeDelta = new Vector2(x, y);
+        rectTransform.sizeDelta = new Vector2(minX, minY);
     }
 }

@@ -49,7 +49,6 @@ MonoBehaviour:
   namaText: Connecting The Dot
   namaMiniGame: 0
   textCanva: {fileID: 936282388401095140}
-  player: {fileID: 0}
 --- !u!33 &8018104954305057771
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -106,6 +105,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8018104954305057770}
     m_Modifications:
+    - target: {fileID: 7185581329749443537, guid: e9621192f9dc6724cabccf694b644b5e, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7185581329749443539, guid: e9621192f9dc6724cabccf694b644b5e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -156,19 +159,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7185581329749443539, guid: e9621192f9dc6724cabccf694b644b5e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8535535
-      objectReference: {fileID: 0}
-    - target: {fileID: 7185581329749443539, guid: e9621192f9dc6724cabccf694b644b5e, type: 3}
-      propertyPath: m_LocalRotation.x
       value: 0.35355338
       objectReference: {fileID: 0}
     - target: {fileID: 7185581329749443539, guid: e9621192f9dc6724cabccf694b644b5e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.1464466
+      objectReference: {fileID: 0}
+    - target: {fileID: 7185581329749443539, guid: e9621192f9dc6724cabccf694b644b5e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.35355338
+      value: -0.8535535
       objectReference: {fileID: 0}
     - target: {fileID: 7185581329749443539, guid: e9621192f9dc6724cabccf694b644b5e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.1464466
+      value: 0.35355338
       objectReference: {fileID: 0}
     - target: {fileID: 7185581329749443539, guid: e9621192f9dc6724cabccf694b644b5e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -176,7 +179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7185581329749443539, guid: e9621192f9dc6724cabccf694b644b5e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1
+      value: 0.821
       objectReference: {fileID: 0}
     - target: {fileID: 7185581329749443539, guid: e9621192f9dc6724cabccf694b644b5e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -184,7 +187,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7185581329749443539, guid: e9621192f9dc6724cabccf694b644b5e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -45
+      value: -135
       objectReference: {fileID: 0}
     - target: {fileID: 7185581329749443539, guid: e9621192f9dc6724cabccf694b644b5e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z

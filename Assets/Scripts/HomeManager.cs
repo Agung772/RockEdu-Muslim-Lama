@@ -171,6 +171,9 @@ public class HomeManager : MonoBehaviour
 
         namaInputField.text = "";
         kelasInputField.text = "";
+
+        if (kidoImage != null) kidoImage.color = Color.white;
+        if (inaImage != null) inaImage.color = Color.white;
     }
 
 
