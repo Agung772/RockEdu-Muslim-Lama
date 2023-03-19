@@ -67,7 +67,7 @@ public class PilihanGanda : MonoBehaviour
             }
 
             button.GetComponent<ButtonScript>().hasClick = true;
-            button.GetComponent<Image>().color = InputColor.instance.orange;
+            button.GetComponent<Image>().color = InputColor.instance.jinggaPG;
         }
 
         //Benar salah jawaban
@@ -75,12 +75,12 @@ public class PilihanGanda : MonoBehaviour
         {
             if (button.GetComponent<ButtonScript>().jawaban == "A")
             {
-                button.GetComponent<Image>().color = InputColor.instance.green;
+                button.GetComponent<Image>().color = InputColor.instance.hijauPG;
                 GameplayPilihanGanda.instance.benar++;
             }
             else
             {
-                button.GetComponent<Image>().color = InputColor.instance.red;
+                button.GetComponent<Image>().color = InputColor.instance.merahPG;
                 GameplayPilihanGanda.instance.salah++;
             }
 

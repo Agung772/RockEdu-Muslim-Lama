@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameplayPilihanGanda : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class GameplayPilihanGanda : MonoBehaviour
     public int bab;
     public int urutanPertanyaan, benar, salah;
 
-    public Text totalPertanyaanText;
+    public TextMeshProUGUI totalPertanyaanText;
     public GameObject pilihanGandaPrefab;
     public Transform spawnSoal, unSpawnSoal;
 
