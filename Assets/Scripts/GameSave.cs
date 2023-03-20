@@ -95,9 +95,14 @@ public class GameSave : MonoBehaviour
     }
     public void SaveScoreMiniGame(string namaMiniGame, int score)
     {
-        PlayerPrefs.SetInt(namaMiniGame + bab + codeSave, score);
+        int scoreSebelumnya = PlayerPrefs.GetInt(namaMiniGame);
 
-        LoadGameData();
+        if (score > scoreSebelumnya)
+        {
+            PlayerPrefs.SetInt(namaMiniGame + bab + codeSave, score);
+
+            LoadGameData();
+        }
     }
 
     public void SaveBab(int Bab)
