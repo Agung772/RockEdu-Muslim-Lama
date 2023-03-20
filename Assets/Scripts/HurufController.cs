@@ -7,7 +7,7 @@ public class HurufController : MonoBehaviour
 {
     public string codeHuruf;
     public bool hurufAktif = true;
-    public float distanc = 1f;
+    public float dist = 1.1f;
 
     [Space]
     public bool use;
@@ -53,6 +53,11 @@ public class HurufController : MonoBehaviour
             }
         }
 
+
+        CollisionNgestay(0);
+        CollisionNgestay(1);
+        CollisionNgestay(2);
+        CollisionNgestay(3);
 
     }
 
@@ -129,10 +134,7 @@ public class HurufController : MonoBehaviour
         //Set huruf lainnya
         if (collision.collider.GetComponent<HurufController>())
         {
-            CollisionNgestay(0);
-            CollisionNgestay(1);
-            CollisionNgestay(2);
-            CollisionNgestay(3);
+
         }
     }
     private void OnCollisionExit(Collision collision)
@@ -166,7 +168,7 @@ public class HurufController : MonoBehaviour
     {
         if (hurufLain[number] != null)
         {
-            if (Vector3.Distance(transform.position, hurufLain[number].position) < distanc)
+            if (Vector3.Distance(transform.position, hurufLain[number].position) < dist)
             {
                 timeForce += Time.deltaTime;
                 if (timeForce > 1)
