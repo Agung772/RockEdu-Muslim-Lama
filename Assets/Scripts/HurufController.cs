@@ -7,6 +7,7 @@ public class HurufController : MonoBehaviour
 {
     public string codeHuruf;
     public bool hurufAktif = true;
+    public float dist = 1.1f;
 
     [Space]
     public bool use;
@@ -14,6 +15,8 @@ public class HurufController : MonoBehaviour
     public bool back;
     public Text hurufText;
     Vector3 mousePosition, savePosisi;
+
+    public Transform[] hurufLain;
 
     private void Awake()
     {
@@ -27,6 +30,9 @@ public class HurufController : MonoBehaviour
     private void Start()
     {
         savePosisi = transform.position;
+
+        HurufController[] count = FindObjectsOfType<HurufController>();
+        hurufLain = new Transform[count.Length];
     }
 
     private void Update()
@@ -46,6 +52,13 @@ public class HurufController : MonoBehaviour
                 GetComponent<Rigidbody>().useGravity = true;
             }
         }
+
+
+        CollisionNgestay(0);
+        CollisionNgestay(1);
+        CollisionNgestay(2);
+        CollisionNgestay(3);
+
     }
 
     Vector3 GetMousePos()
@@ -85,12 +98,23 @@ public class HurufController : MonoBehaviour
         if (collision.collider.GetComponent<HurufController>())
         {
             timeForce = 0;
+
+            //Set huruf lainnya
+            for (int i = 0; i < hurufLain.Length; i++)
+            {
+                if (hurufLain[i] == null)
+                {
+                    hurufLain[i] = collision.collider.gameObject.transform;
+                    break;
+                }
+            }
         }
     }
     private void OnCollisionStay(Collision collision)
     {
         if (!hurufAktif) return;
 
+        /*
         if (collision.collider.GetComponent<HurufController>())
         {
             timeForce += Time.deltaTime;
@@ -103,6 +127,13 @@ public class HurufController : MonoBehaviour
                 GetComponent<BoxCollider>().isTrigger = true;
 
             }
+
+        }
+        */
+
+        //Set huruf lainnya
+        if (collision.collider.GetComponent<HurufController>())
+        {
 
         }
     }
@@ -120,6 +151,35 @@ public class HurufController : MonoBehaviour
                 GetComponent<BoxCollider>().isTrigger = false;
             }
 
+            //Set huruf lainnya
+            for (int i = 0; i < hurufLain.Length; i++)
+            {
+                if (hurufLain[i] != null)
+                {
+                    hurufLain[i] = null;
+                    break;
+                }
+            }
+
+        }
+    }
+
+    void CollisionNgestay(int number)
+    {
+        if (hurufLain[number] != null)
+        {
+            if (Vector3.Distance(transform.position, hurufLain[number].position) < dist)
+            {
+                timeForce += Time.deltaTime;
+                if (timeForce > 1)
+                {
+                    GetComponent<Rigidbody>().velocity = new Vector3(Random.Range(-3, 4), 7, 0);
+
+                    GetComponent<BoxCollider>().isTrigger = true;
+
+                }
+                print(timeForce);
+            }
         }
     }
 }
