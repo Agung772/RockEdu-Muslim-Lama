@@ -5,6 +5,8 @@ using UnityEngine.AI;
 
 public class PlayerControllerMGPF : MonoBehaviour
 {
+    public bool useDisplay;
+
     public GameObject destinationPrefab;
     public NavMeshAgent navMeshAgent;
     public Transform cameraMetaGame;
@@ -13,6 +15,8 @@ public class PlayerControllerMGPF : MonoBehaviour
     public AnimatorKarakter animatorKarakter;
 
     public LineRenderer displayRute;
+
+
 
 
     RaycastHit hit;
@@ -49,7 +53,14 @@ public class PlayerControllerMGPF : MonoBehaviour
 
         if (navMeshAgent.hasPath)
         {
-            DisplayRute();
+            if (useDisplay)
+            {
+                DisplayRute();
+            }
+        }
+        else
+        {
+            useDisplay = false;
         }
 
 
@@ -58,14 +69,12 @@ public class PlayerControllerMGPF : MonoBehaviour
         if (navMeshAgent.remainingDistance == 0 && conditionAnimasi != "Idle")
         {
             conditionAnimasi = "Idle";
-            print("Idle");
             animatorKarakter.animator.SetBool("Walk", false);
 
         }
         else if (navMeshAgent.remainingDistance > 0.1f && conditionAnimasi != "Walk")
         {
             conditionAnimasi = "Walk";
-            print("Sedang jalan");
             animatorKarakter.animator.SetBool("Walk", true);
         }
 
@@ -75,6 +84,8 @@ public class PlayerControllerMGPF : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             DestroyDestination();
+
+            useDisplay = false;
         }
     }
     public void MouseUp()
@@ -87,8 +98,16 @@ public class PlayerControllerMGPF : MonoBehaviour
                 navMeshAgent.SetDestination(hit.point);
 
                 SpawndDestination();
+
+                //Jarak nongol display rute
+                if (Vector3.Distance(transform.position, navMeshAgent.destination) > 5)
+                {
+                    useDisplay = true;
+                    print(navMeshAgent.destination);
+                }
             }
         }
+
     }
 
     void SpawndDestination()
