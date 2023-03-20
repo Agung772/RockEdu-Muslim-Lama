@@ -1268,6 +1268,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: c15abf0f62838594f80373acdac0dd94, type: 3}
+    - target: {fileID: 8925777638916842891, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9212054644035821090, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
       propertyPath: m_Spacing
       value: 50

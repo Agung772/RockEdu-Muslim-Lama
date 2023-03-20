@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: af97fe5004e7213499676b3afca1239a
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8111686088518609594
+    second: Asset 25_0
+  - first:
+      213: 5869766520889716316
+    second: Asset 25_1
+  - first:
+      213: 6576747295946123112
+    second: Asset 25_2
+  - first:
+      213: 70377647707742856
+    second: Asset 25_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +53,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -101,7 +113,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Asset 25_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 301
+        height: 412
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645de54ea708d6f80800000000000000
+      internalID: -8111686088518609594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 25_1
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 82
+        width: 135
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5eac182d89957150800000000000000
+      internalID: 5869766520889716316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 25_2
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 43
+        width: 3477
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 867216012dc454b50800000000000000
+      internalID: 6576747295946123112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 25_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 451
+        height: 412
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8826fb309180af000800000000000000
+      internalID: 70377647707742856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

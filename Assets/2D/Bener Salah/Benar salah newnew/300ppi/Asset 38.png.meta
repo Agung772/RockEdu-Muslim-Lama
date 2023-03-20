@@ -1,7 +1,898 @@
 fileFormatVersion: 2
 guid: 9781a3aa7ab54ef4493f97c2f465a510
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6607229942784642195
+    second: Asset 38_0
+  - first:
+      213: 7019565842459028932
+    second: Asset 38_1
+  - first:
+      213: 7726076790501337928
+    second: Asset 38_2
+  - first:
+      213: -5104485677342174728
+    second: Asset 38_3
+  - first:
+      213: -4740039944396983676
+    second: Asset 38_4
+  - first:
+      213: -4982206514267812293
+    second: Asset 38_5
+  - first:
+      213: 1519630611030894099
+    second: Asset 38_6
+  - first:
+      213: 1055137608517648416
+    second: Asset 38_7
+  - first:
+      213: -1894024314346877932
+    second: Asset 38_8
+  - first:
+      213: 984747255248886745
+    second: Asset 38_9
+  - first:
+      213: 1966307759442119956
+    second: Asset 38_10
+  - first:
+      213: 6521633960201399393
+    second: Asset 38_11
+  - first:
+      213: -6520119461130434060
+    second: Asset 38_12
+  - first:
+      213: -3260267067504357816
+    second: Asset 38_13
+  - first:
+      213: -3934946518751431467
+    second: Asset 38_14
+  - first:
+      213: 7212750072076148182
+    second: Asset 38_15
+  - first:
+      213: 370111902151044095
+    second: Asset 38_16
+  - first:
+      213: 5560860936885512333
+    second: Asset 38_17
+  - first:
+      213: -2631067358844747159
+    second: Asset 38_18
+  - first:
+      213: 1097257975087230312
+    second: Asset 38_19
+  - first:
+      213: 237785277676586896
+    second: Asset 38_20
+  - first:
+      213: -446767304267117398
+    second: Asset 38_21
+  - first:
+      213: -1110993295447332104
+    second: Asset 38_22
+  - first:
+      213: 790917071938459678
+    second: Asset 38_23
+  - first:
+      213: 7829080956760678582
+    second: Asset 38_24
+  - first:
+      213: 4509771536791716089
+    second: Asset 38_25
+  - first:
+      213: -9125368477700921940
+    second: Asset 38_26
+  - first:
+      213: 5125563383458700445
+    second: Asset 38_27
+  - first:
+      213: 5630602643784620885
+    second: Asset 38_28
+  - first:
+      213: 1195686689122567494
+    second: Asset 38_29
+  - first:
+      213: -640617417546580942
+    second: Asset 38_30
+  - first:
+      213: -4204982257207564081
+    second: Asset 38_31
+  - first:
+      213: 1138997703159477304
+    second: Asset 38_32
+  - first:
+      213: -7497005647967976488
+    second: Asset 38_33
+  - first:
+      213: 647297101927711756
+    second: Asset 38_34
+  - first:
+      213: 1778686181750482793
+    second: Asset 38_35
+  - first:
+      213: -6824591808475046506
+    second: Asset 38_36
+  - first:
+      213: -683600739088508767
+    second: Asset 38_37
+  - first:
+      213: 529585549544037435
+    second: Asset 38_38
+  - first:
+      213: 1564709216164291033
+    second: Asset 38_39
+  - first:
+      213: 7325832042971177341
+    second: Asset 38_40
+  - first:
+      213: -228290508815984959
+    second: Asset 38_41
+  - first:
+      213: 5784324621788446733
+    second: Asset 38_42
+  - first:
+      213: 1483344304769492782
+    second: Asset 38_43
+  - first:
+      213: -8914890206498055021
+    second: Asset 38_44
+  - first:
+      213: 3292873724273068235
+    second: Asset 38_45
+  - first:
+      213: -6343465896083253596
+    second: Asset 38_46
+  - first:
+      213: -246616223252684001
+    second: Asset 38_47
+  - first:
+      213: -2667595853260200357
+    second: Asset 38_48
+  - first:
+      213: 2642174634131090440
+    second: Asset 38_49
+  - first:
+      213: -6899026486580628552
+    second: Asset 38_50
+  - first:
+      213: 577763911619158377
+    second: Asset 38_51
+  - first:
+      213: -3178458940764314841
+    second: Asset 38_52
+  - first:
+      213: -7987582952349951042
+    second: Asset 38_53
+  - first:
+      213: -8688198380234570217
+    second: Asset 38_54
+  - first:
+      213: -3698047310790347663
+    second: Asset 38_55
+  - first:
+      213: -1684936571374552952
+    second: Asset 38_56
+  - first:
+      213: 853985275545789421
+    second: Asset 38_57
+  - first:
+      213: -5259578308454685402
+    second: Asset 38_58
+  - first:
+      213: 405400379086506437
+    second: Asset 38_59
+  - first:
+      213: -6516777606533422473
+    second: Asset 38_60
+  - first:
+      213: 540468345234947588
+    second: Asset 38_61
+  - first:
+      213: 2162498043803567662
+    second: Asset 38_62
+  - first:
+      213: 7865811291841173397
+    second: Asset 38_63
+  - first:
+      213: -5403524047557344187
+    second: Asset 38_64
+  - first:
+      213: 4735503973642017006
+    second: Asset 38_65
+  - first:
+      213: -1035783964650813560
+    second: Asset 38_66
+  - first:
+      213: 8296744604681288073
+    second: Asset 38_67
+  - first:
+      213: 3974018379250750933
+    second: Asset 38_68
+  - first:
+      213: -3367279054378505415
+    second: Asset 38_69
+  - first:
+      213: -3389662548213712466
+    second: Asset 38_70
+  - first:
+      213: 42713242672192167
+    second: Asset 38_71
+  - first:
+      213: 1088189793724943979
+    second: Asset 38_72
+  - first:
+      213: 5464891203284712373
+    second: Asset 38_73
+  - first:
+      213: -3322033997988442028
+    second: Asset 38_74
+  - first:
+      213: 2617788636263214074
+    second: Asset 38_75
+  - first:
+      213: -304039453159696437
+    second: Asset 38_76
+  - first:
+      213: 6804232842166159327
+    second: Asset 38_77
+  - first:
+      213: 1027194032268078264
+    second: Asset 38_78
+  - first:
+      213: -4500116078927872099
+    second: Asset 38_79
+  - first:
+      213: -6444461108269293213
+    second: Asset 38_80
+  - first:
+      213: -1112996883102503175
+    second: Asset 38_81
+  - first:
+      213: -9145774956295931372
+    second: Asset 38_82
+  - first:
+      213: 2250992736015995017
+    second: Asset 38_83
+  - first:
+      213: 6516940459667375073
+    second: Asset 38_84
+  - first:
+      213: -6157907630521097642
+    second: Asset 38_85
+  - first:
+      213: -9174176094210006111
+    second: Asset 38_86
+  - first:
+      213: 340320963545207947
+    second: Asset 38_87
+  - first:
+      213: 1125770934623239341
+    second: Asset 38_88
+  - first:
+      213: 3763407170950897439
+    second: Asset 38_89
+  - first:
+      213: 5629953662959514118
+    second: Asset 38_90
+  - first:
+      213: 260277432955618748
+    second: Asset 38_91
+  - first:
+      213: 7245705419771464021
+    second: Asset 38_92
+  - first:
+      213: 9118290095827002265
+    second: Asset 38_93
+  - first:
+      213: -9158802330339251601
+    second: Asset 38_94
+  - first:
+      213: -5275397672899568207
+    second: Asset 38_95
+  - first:
+      213: -3310373960095243291
+    second: Asset 38_96
+  - first:
+      213: 5999830776153301284
+    second: Asset 38_97
+  - first:
+      213: 5962827702331510195
+    second: Asset 38_98
+  - first:
+      213: -8300827688197254257
+    second: Asset 38_99
+  - first:
+      213: 3608670792794771576
+    second: Asset 38_100
+  - first:
+      213: -3572068543963987938
+    second: Asset 38_101
+  - first:
+      213: 5956999180973824068
+    second: Asset 38_102
+  - first:
+      213: -7634465838790624433
+    second: Asset 38_103
+  - first:
+      213: 1276939427945070514
+    second: Asset 38_104
+  - first:
+      213: -3729926601920759043
+    second: Asset 38_105
+  - first:
+      213: -3491155854155011055
+    second: Asset 38_106
+  - first:
+      213: -4460283844773495726
+    second: Asset 38_107
+  - first:
+      213: 3989387963474478965
+    second: Asset 38_108
+  - first:
+      213: -1363770853904293716
+    second: Asset 38_109
+  - first:
+      213: 2280448624545620895
+    second: Asset 38_110
+  - first:
+      213: 3349354549933356512
+    second: Asset 38_111
+  - first:
+      213: -1377265190590966339
+    second: Asset 38_112
+  - first:
+      213: 5367419663319300368
+    second: Asset 38_113
+  - first:
+      213: 6062976371911914913
+    second: Asset 38_114
+  - first:
+      213: -771932518014759654
+    second: Asset 38_115
+  - first:
+      213: -335770525702296355
+    second: Asset 38_116
+  - first:
+      213: 6551545732266286353
+    second: Asset 38_117
+  - first:
+      213: 775703129563910654
+    second: Asset 38_118
+  - first:
+      213: -3456326973093349848
+    second: Asset 38_119
+  - first:
+      213: -1198428134509886186
+    second: Asset 38_120
+  - first:
+      213: 8806398674617706033
+    second: Asset 38_121
+  - first:
+      213: 3672821138333040259
+    second: Asset 38_122
+  - first:
+      213: -7599526444641625685
+    second: Asset 38_123
+  - first:
+      213: 6771541423640901819
+    second: Asset 38_124
+  - first:
+      213: 3464363114307006096
+    second: Asset 38_125
+  - first:
+      213: -5003624403992801510
+    second: Asset 38_126
+  - first:
+      213: 1334282846429170597
+    second: Asset 38_127
+  - first:
+      213: -2723009179876527740
+    second: Asset 38_128
+  - first:
+      213: -1527121409321225502
+    second: Asset 38_129
+  - first:
+      213: -6711418828337046526
+    second: Asset 38_130
+  - first:
+      213: 7919289381179492947
+    second: Asset 38_131
+  - first:
+      213: 6755119408983723784
+    second: Asset 38_132
+  - first:
+      213: 8541274026345140693
+    second: Asset 38_133
+  - first:
+      213: 7256372042416583398
+    second: Asset 38_134
+  - first:
+      213: -1143040678674475548
+    second: Asset 38_135
+  - first:
+      213: -8992020174548583529
+    second: Asset 38_136
+  - first:
+      213: -3850070746803298338
+    second: Asset 38_137
+  - first:
+      213: -6924555549287647375
+    second: Asset 38_138
+  - first:
+      213: -2690474584705551643
+    second: Asset 38_139
+  - first:
+      213: 1629838293373650966
+    second: Asset 38_140
+  - first:
+      213: -1599615313751281994
+    second: Asset 38_141
+  - first:
+      213: -4987127499622024736
+    second: Asset 38_142
+  - first:
+      213: 5956797521131545468
+    second: Asset 38_143
+  - first:
+      213: -6495111384675088077
+    second: Asset 38_144
+  - first:
+      213: 8573003334029281279
+    second: Asset 38_145
+  - first:
+      213: -1147325628292513947
+    second: Asset 38_146
+  - first:
+      213: 2222977550954147152
+    second: Asset 38_147
+  - first:
+      213: 7021313673490592359
+    second: Asset 38_148
+  - first:
+      213: 967719440437989482
+    second: Asset 38_149
+  - first:
+      213: -8371849771732750179
+    second: Asset 38_150
+  - first:
+      213: 1928072891987610419
+    second: Asset 38_151
+  - first:
+      213: -5016586081679955707
+    second: Asset 38_152
+  - first:
+      213: 6101445550986303804
+    second: Asset 38_153
+  - first:
+      213: -5062030487065748677
+    second: Asset 38_154
+  - first:
+      213: -6731665667336631812
+    second: Asset 38_155
+  - first:
+      213: 5660190879186770857
+    second: Asset 38_156
+  - first:
+      213: 4090882815210090960
+    second: Asset 38_157
+  - first:
+      213: 2120747716798088806
+    second: Asset 38_158
+  - first:
+      213: 1227355548802714302
+    second: Asset 38_159
+  - first:
+      213: -5129421878932916974
+    second: Asset 38_160
+  - first:
+      213: -4285785124851950677
+    second: Asset 38_161
+  - first:
+      213: -8972028089841511786
+    second: Asset 38_162
+  - first:
+      213: -8025142475409438935
+    second: Asset 38_163
+  - first:
+      213: -7373451891838011571
+    second: Asset 38_164
+  - first:
+      213: 1747234219308324485
+    second: Asset 38_165
+  - first:
+      213: 6834559826055435394
+    second: Asset 38_166
+  - first:
+      213: -4099063287206985885
+    second: Asset 38_167
+  - first:
+      213: -7662781989025738598
+    second: Asset 38_168
+  - first:
+      213: -5018888638058312027
+    second: Asset 38_169
+  - first:
+      213: 686508837239892890
+    second: Asset 38_170
+  - first:
+      213: 1983461114601937422
+    second: Asset 38_171
+  - first:
+      213: 2178214528390421780
+    second: Asset 38_172
+  - first:
+      213: 723592409374766401
+    second: Asset 38_173
+  - first:
+      213: 7326152770033522423
+    second: Asset 38_174
+  - first:
+      213: -3554501910032387020
+    second: Asset 38_175
+  - first:
+      213: -8439443329782940167
+    second: Asset 38_176
+  - first:
+      213: -8980407576630580395
+    second: Asset 38_177
+  - first:
+      213: 2930423728064849549
+    second: Asset 38_178
+  - first:
+      213: -3390697380267638469
+    second: Asset 38_179
+  - first:
+      213: -7596075817384300838
+    second: Asset 38_180
+  - first:
+      213: 7981540369930979103
+    second: Asset 38_181
+  - first:
+      213: -6264710124283336192
+    second: Asset 38_182
+  - first:
+      213: -2478165805154138740
+    second: Asset 38_183
+  - first:
+      213: 8254120034797534064
+    second: Asset 38_184
+  - first:
+      213: 4426121860954384714
+    second: Asset 38_185
+  - first:
+      213: 3861010765351210009
+    second: Asset 38_186
+  - first:
+      213: -1204772804287396822
+    second: Asset 38_187
+  - first:
+      213: 8138617274036345800
+    second: Asset 38_188
+  - first:
+      213: -7085327164524355616
+    second: Asset 38_189
+  - first:
+      213: 3785340137313625027
+    second: Asset 38_190
+  - first:
+      213: 3380006008763638246
+    second: Asset 38_191
+  - first:
+      213: 3256524391359875628
+    second: Asset 38_192
+  - first:
+      213: 476226805653872179
+    second: Asset 38_193
+  - first:
+      213: 6752696657363683393
+    second: Asset 38_194
+  - first:
+      213: 8338432125560891584
+    second: Asset 38_195
+  - first:
+      213: -7506838736237928638
+    second: Asset 38_196
+  - first:
+      213: 6785333682849912690
+    second: Asset 38_197
+  - first:
+      213: 2421074147098296620
+    second: Asset 38_198
+  - first:
+      213: 7460292377607498404
+    second: Asset 38_199
+  - first:
+      213: 6313825545801423877
+    second: Asset 38_200
+  - first:
+      213: -6172417868538923483
+    second: Asset 38_201
+  - first:
+      213: -8898332851640767203
+    second: Asset 38_202
+  - first:
+      213: -8747369284356186041
+    second: Asset 38_203
+  - first:
+      213: -2210491616811715229
+    second: Asset 38_204
+  - first:
+      213: -9220557995717455829
+    second: Asset 38_205
+  - first:
+      213: 531156975078893599
+    second: Asset 38_206
+  - first:
+      213: -2529045960981748243
+    second: Asset 38_207
+  - first:
+      213: -6150832606104344074
+    second: Asset 38_208
+  - first:
+      213: 7873454575571313768
+    second: Asset 38_209
+  - first:
+      213: -1160940680160019949
+    second: Asset 38_210
+  - first:
+      213: -3630293510963946182
+    second: Asset 38_211
+  - first:
+      213: -4506406573951352287
+    second: Asset 38_212
+  - first:
+      213: 125933756372014674
+    second: Asset 38_213
+  - first:
+      213: -6285945769042373488
+    second: Asset 38_214
+  - first:
+      213: -4998235103951158206
+    second: Asset 38_215
+  - first:
+      213: -2162744689615218079
+    second: Asset 38_216
+  - first:
+      213: -5776759693435288292
+    second: Asset 38_217
+  - first:
+      213: -8578839005525357223
+    second: Asset 38_218
+  - first:
+      213: -4052422231984270437
+    second: Asset 38_219
+  - first:
+      213: -8800043397226569464
+    second: Asset 38_220
+  - first:
+      213: -8693815973483243595
+    second: Asset 38_221
+  - first:
+      213: 6831743380375117391
+    second: Asset 38_222
+  - first:
+      213: -2687895891624782621
+    second: Asset 38_223
+  - first:
+      213: -5839339407094522289
+    second: Asset 38_224
+  - first:
+      213: 9101529435844538080
+    second: Asset 38_225
+  - first:
+      213: 4306526888837174347
+    second: Asset 38_226
+  - first:
+      213: 8984694291000830819
+    second: Asset 38_227
+  - first:
+      213: 5684562021780985227
+    second: Asset 38_228
+  - first:
+      213: 7919065009085642309
+    second: Asset 38_229
+  - first:
+      213: -765750528974868942
+    second: Asset 38_230
+  - first:
+      213: 6628348477210896645
+    second: Asset 38_231
+  - first:
+      213: -3018935337398470134
+    second: Asset 38_232
+  - first:
+      213: -2615877923007024412
+    second: Asset 38_233
+  - first:
+      213: -4978198481756064313
+    second: Asset 38_234
+  - first:
+      213: 2299429225921249572
+    second: Asset 38_235
+  - first:
+      213: -5507411678702860344
+    second: Asset 38_236
+  - first:
+      213: 6214592092916462970
+    second: Asset 38_237
+  - first:
+      213: -3062920293964461413
+    second: Asset 38_238
+  - first:
+      213: 3331734895745743534
+    second: Asset 38_239
+  - first:
+      213: -3892662397119831681
+    second: Asset 38_240
+  - first:
+      213: -3434723536918500014
+    second: Asset 38_241
+  - first:
+      213: -1198546879212331819
+    second: Asset 38_242
+  - first:
+      213: 1828779830328818963
+    second: Asset 38_243
+  - first:
+      213: -3306383926782559317
+    second: Asset 38_244
+  - first:
+      213: 1406793837506213920
+    second: Asset 38_245
+  - first:
+      213: 9032273069267859712
+    second: Asset 38_246
+  - first:
+      213: 7936679199348761050
+    second: Asset 38_247
+  - first:
+      213: 7833251018492362470
+    second: Asset 38_248
+  - first:
+      213: -341646275602364194
+    second: Asset 38_249
+  - first:
+      213: -4434575161059663896
+    second: Asset 38_250
+  - first:
+      213: -3950288067563177953
+    second: Asset 38_251
+  - first:
+      213: -6870583839223223380
+    second: Asset 38_252
+  - first:
+      213: 4866393127048064807
+    second: Asset 38_253
+  - first:
+      213: 6031339735214839582
+    second: Asset 38_254
+  - first:
+      213: -6088450599541590527
+    second: Asset 38_255
+  - first:
+      213: 1540268821634479952
+    second: Asset 38_256
+  - first:
+      213: 3224146441181778537
+    second: Asset 38_257
+  - first:
+      213: 6160199364020039858
+    second: Asset 38_258
+  - first:
+      213: -332577305846794474
+    second: Asset 38_259
+  - first:
+      213: 1537044066834886287
+    second: Asset 38_260
+  - first:
+      213: -2211626879662673769
+    second: Asset 38_261
+  - first:
+      213: 6651496600725427842
+    second: Asset 38_262
+  - first:
+      213: 4733175276419516730
+    second: Asset 38_263
+  - first:
+      213: 2353826742337801215
+    second: Asset 38_264
+  - first:
+      213: 4185918632295705875
+    second: Asset 38_265
+  - first:
+      213: 4236256528104528484
+    second: Asset 38_266
+  - first:
+      213: -2813844804215474901
+    second: Asset 38_267
+  - first:
+      213: -127511136638526184
+    second: Asset 38_268
+  - first:
+      213: 723260494673784954
+    second: Asset 38_269
+  - first:
+      213: 4275985528109575460
+    second: Asset 38_270
+  - first:
+      213: 896973331967689863
+    second: Asset 38_271
+  - first:
+      213: -302603066607832608
+    second: Asset 38_272
+  - first:
+      213: 3120801423500715908
+    second: Asset 38_273
+  - first:
+      213: -6226924668105904514
+    second: Asset 38_274
+  - first:
+      213: 1391078667016409945
+    second: Asset 38_275
+  - first:
+      213: 5640802018841098131
+    second: Asset 38_276
+  - first:
+      213: -1026207085824339478
+    second: Asset 38_277
+  - first:
+      213: -4372508097938986508
+    second: Asset 38_278
+  - first:
+      213: 4528366207549757105
+    second: Asset 38_279
+  - first:
+      213: 2220120672242950500
+    second: Asset 38_280
+  - first:
+      213: 6939928248887235228
+    second: Asset 38_281
+  - first:
+      213: 1506344475776724947
+    second: Asset 38_282
+  - first:
+      213: -8957709246206523349
+    second: Asset 38_283
+  - first:
+      213: -1811084795310693115
+    second: Asset 38_284
+  - first:
+      213: -4494324805131202014
+    second: Asset 38_285
+  - first:
+      213: 1876916607308271961
+    second: Asset 38_286
+  - first:
+      213: -8311685223318108705
+    second: Asset 38_287
+  - first:
+      213: 7318375263441520726
+    second: Asset 38_288
+  - first:
+      213: -8845502122556714628
+    second: Asset 38_289
+  - first:
+      213: 7804359621516631853
+    second: Asset 38_290
+  - first:
+      213: -1968916954390919772
+    second: Asset 38_291
+  - first:
+      213: -892061303095575465
+    second: Asset 38_292
+  - first:
+      213: 6142114342786144701
+    second: Asset 38_293
+  - first:
+      213: 1860519962992784194
+    second: Asset 38_294
+  - first:
+      213: 6546478221529944490
+    second: Asset 38_295
+  - first:
+      213: -1795568014920052257
+    second: Asset 38_296
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +932,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -101,7 +992,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Asset 38_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 300
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d633ff6af576e44a0800000000000000
+      internalID: -6607229942784642195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 38_1
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 83
+        width: 133
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd6c3541f18a6160800000000000000
+      internalID: 7019565842459028932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 38_2
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 37
+        width: 3265
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84be83d08e9883b60800000000000000
+      internalID: 7726076790501337928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 38_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 457
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f153f832593929b0800000000000000
+      internalID: -5104485677342174728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
