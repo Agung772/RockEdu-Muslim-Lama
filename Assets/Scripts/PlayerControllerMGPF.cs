@@ -53,9 +53,10 @@ public class PlayerControllerMGPF : MonoBehaviour
 
         if (navMeshAgent.hasPath)
         {
+            DisplayRute();
             if (useDisplay)
             {
-                DisplayRute();
+                //DisplayRute();
             }
         }
         else
@@ -87,6 +88,9 @@ public class PlayerControllerMGPF : MonoBehaviour
 
             useDisplay = false;
         }
+
+        //Set display rute
+        displayRute.positionCount = 0;
     }
     public void MouseUp()
     {
@@ -103,7 +107,6 @@ public class PlayerControllerMGPF : MonoBehaviour
                 if (Vector3.Distance(transform.position, navMeshAgent.destination) > 5)
                 {
                     useDisplay = true;
-                    print(navMeshAgent.destination);
                 }
             }
         }
