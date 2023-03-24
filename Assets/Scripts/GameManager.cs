@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     {
         kosong,
         MetaGame,
+        Home,
         ConnectingTheDot,
         SpellingBee,
         PilihanGanda,
@@ -56,6 +57,14 @@ public class GameManager : MonoBehaviour
         {
             openingTextMiniGame.gameObject.SetActive(true);
             openingTextMiniGame.TextOpening("Pilih Jawaban Yang Benar!!!", "BS");
+        }
+        else if (namaScene == NamaScene.MetaGame)
+        {
+            AudioManager.instance.BgmMetaGame();
+        }
+        else if (namaScene == NamaScene.Home)
+        {
+            AudioManager.instance.BgmHome();
         }
     }
 

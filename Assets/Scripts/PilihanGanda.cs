@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class PilihanGanda : MonoBehaviour
 {
     public bool sudahDijawab;
+    public string condition;
     public TextMeshProUGUI soalTextPro;
 
     public Image[] jawabanImage;
@@ -77,11 +78,13 @@ public class PilihanGanda : MonoBehaviour
             {
                 button.GetComponent<Image>().color = InputColor.instance.hijauPG;
                 GameplayPilihanGanda.instance.benar++;
+                condition = "Benar";
             }
             else
             {
                 button.GetComponent<Image>().color = InputColor.instance.merahPG;
                 GameplayPilihanGanda.instance.salah++;
+                condition = "Salah";
             }
 
             sudahDijawab = true;

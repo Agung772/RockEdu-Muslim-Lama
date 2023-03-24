@@ -511,6 +511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sudahDijawab: 0
+  condition: 
   soalTextPro: {fileID: 5689096901817624437}
   jawabanImage:
   - {fileID: 5949733078522987661}
@@ -1131,7 +1132,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3990127007396624416
 RectTransform:
   m_ObjectHideFlags: 0

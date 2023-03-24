@@ -17,7 +17,10 @@ public class AudioManager : MonoBehaviour
     public AudioSource audioSourceSfx;
 
     //Input Audio
-    public AudioClip bgmConnectTheDots;
+    public AudioClip 
+        bgmConnectTheDots,
+        bgmMetaGame,
+        bgmHome;
 
     public AudioClip sfxScore, sfxGameOver, sfxHoldClick, sfxEnterMinigame, sfxPause, sfxUnpause ,sfxBenar, sfxSalah;
 
@@ -88,6 +91,8 @@ public class AudioManager : MonoBehaviour
 
     //Audio BGM
     public void BgmConnectTheDots() { audioSourceBgm.clip = bgmConnectTheDots; audioSourceBgm.Play(); }
+    public void BgmMetaGame() { audioSourceBgm.clip = bgmMetaGame; audioSourceBgm.Play(); }
+    public void BgmHome() { audioSourceBgm.clip = bgmHome; audioSourceBgm.Play(); }
 
 
     //Audio SFX
@@ -102,7 +107,7 @@ public class AudioManager : MonoBehaviour
 
 
     //TesterVolume
-    public void BgmTester() { if (sfxPause != null) audioSourceBgm.PlayOneShot(sfxPause); }
+    public void BgmTester() {  }
     public void SfxTester() { if (sfxPause != null) audioSourceSfx.PlayOneShot(sfxPause); }
 
 }

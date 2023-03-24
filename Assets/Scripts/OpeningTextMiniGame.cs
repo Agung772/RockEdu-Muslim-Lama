@@ -11,7 +11,7 @@ public class OpeningTextMiniGame : MonoBehaviour
     bool clickTextKedua;
 
     public GameObject loadingPG;
-
+    string miniGame;
 
     private void Awake()
     {
@@ -20,6 +20,7 @@ public class OpeningTextMiniGame : MonoBehaviour
 
     public void TextOpening(string textKedua, string minigame)
     {
+        miniGame = minigame;
         if (minigame == "PG")
         {
             StartCoroutine(Coroutine());
@@ -42,6 +43,7 @@ public class OpeningTextMiniGame : MonoBehaviour
             StartCoroutine(Coroutine());
             IEnumerator Coroutine()
             {
+                textOpening.gameObject.SetActive(true);
                 yield return new WaitForSeconds(2);
                 textOpening.text = textKedua;
                 clickTextKedua = true;
@@ -54,15 +56,28 @@ public class OpeningTextMiniGame : MonoBehaviour
     {
         if (Input.anyKeyDown && clickTextKedua)
         {
-            if (AnimasiManager.instance.animasiScreenCTD.gameObject.activeInHierarchy)
+            if (miniGame == "PG")
             {
-                AnimasiManager.instance.AnimasiScreenCTD(false);
+                if (AnimasiManager.instance.animasiScreenCTD.gameObject.activeInHierarchy)
+                {
+                    AnimasiManager.instance.AnimasiScreenCTD(false);
+                }
+                gameObject.SetActive(false);
+                GameplayPilihanGanda.instance.StartAwalPG();
+            }
+            else
+            {
+                if (AnimasiManager.instance.animasiScreenCTD.gameObject.activeInHierarchy)
+                {
+                    AnimasiManager.instance.AnimasiScreenCTD(false);
+                }
+                gameObject.SetActive(false);
             }
 
 
-            gameObject.SetActive(false);
 
 
         }
+
     }
 }

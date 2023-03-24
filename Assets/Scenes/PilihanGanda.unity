@@ -592,7 +592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7856856832089240234, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
       propertyPath: namaScene
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7922768744816668618, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
       propertyPath: m_SizeDelta.x
@@ -716,6 +716,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 853695893232460554, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
   m_PrefabInstance: {fileID: 268023798}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &531775731 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3028802302686888694, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+  m_PrefabInstance: {fileID: 268023798}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &635855550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -871,17 +882,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4226954238681795359, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
   m_PrefabInstance: {fileID: 268023798}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1116006589 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3450887630195473606, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
-  m_PrefabInstance: {fileID: 268023798}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1131906742
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,10 +915,13 @@ MonoBehaviour:
   urutanPertanyaan: 0
   benar: 0
   salah: 0
-  totalPertanyaanText: {fileID: 1116006589}
+  totalPertanyaanText: {fileID: 531775731}
   pilihanGandaPrefab: {fileID: 1957271418741897191, guid: cea5edb9a0da650488ac06d27b694a1a, type: 3}
+  transisiNext: {fileID: 1643039924}
   spawnSoal: {fileID: 860985803}
   unSpawnSoal: {fileID: 291609849}
+  bGAnimasi: {fileID: 1342941850}
+  buttonPG: {fileID: 1725738155}
   listPertanyaanBab1:
   - pertanyaan: 
     a: 
@@ -1184,6 +1187,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1342941850 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6055623906733538714, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+  m_PrefabInstance: {fileID: 268023798}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1643039924 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 310536716372547621, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+  m_PrefabInstance: {fileID: 268023798}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1725738155 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6207258400509160027, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+  m_PrefabInstance: {fileID: 268023798}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1850229028
 GameObject:
   m_ObjectHideFlags: 0
