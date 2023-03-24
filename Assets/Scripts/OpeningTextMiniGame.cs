@@ -26,7 +26,7 @@ public class OpeningTextMiniGame : MonoBehaviour
             IEnumerator Coroutine()
             {
                 loadingPG.SetActive(true);
-                yield return new WaitForSeconds(3);
+                yield return new WaitForSeconds(5);
                 loadingPG.SetActive(false);
 
                 textOpening.gameObject.SetActive(true);
