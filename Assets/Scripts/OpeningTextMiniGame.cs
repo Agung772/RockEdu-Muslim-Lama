@@ -10,21 +10,44 @@ public class OpeningTextMiniGame : MonoBehaviour
     public TextMeshProUGUI textOpening;
     bool clickTextKedua;
 
+    public GameObject loadingPG;
+
 
     private void Awake()
     {
         instance = this;
     }
 
-    public void TextOpening(string textKedua)
+    public void TextOpening(string textKedua, string minigame)
     {
-        StartCoroutine(Coroutine());
-        IEnumerator Coroutine()
+        if (minigame == "PG")
         {
-            yield return new WaitForSeconds(2);
-            textOpening.text = textKedua;
-            clickTextKedua = true;
+            StartCoroutine(Coroutine());
+            IEnumerator Coroutine()
+            {
+                loadingPG.SetActive(true);
+                yield return new WaitForSeconds(3);
+                loadingPG.SetActive(false);
+
+                textOpening.gameObject.SetActive(true);
+
+                yield return new WaitForSeconds(2);
+                textOpening.text = textKedua;
+                clickTextKedua = true;
+            }
+
         }
+        else
+        {
+            StartCoroutine(Coroutine());
+            IEnumerator Coroutine()
+            {
+                yield return new WaitForSeconds(2);
+                textOpening.text = textKedua;
+                clickTextKedua = true;
+            }
+        }
+
     }
 
     private void Update()

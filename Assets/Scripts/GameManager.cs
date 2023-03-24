@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
         if (namaScene == NamaScene.ConnectingTheDot)
         {
             openingTextMiniGame.gameObject.SetActive(true);
-            openingTextMiniGame.TextOpening("Hubungkan Teks dan Gambarnya!!!");
+            openingTextMiniGame.TextOpening("Hubungkan Teks dan Gambarnya!!!", "CTD");
 
             AnimasiManager.instance.AnimasiScreenCTD(true);
 
@@ -45,17 +45,17 @@ public class GameManager : MonoBehaviour
         else if (namaScene == NamaScene.SpellingBee)
         {
             openingTextMiniGame.gameObject.SetActive(true);
-            openingTextMiniGame.TextOpening("Isi garis yang kosong dengan huruf sesuai gambar!!!");
+            openingTextMiniGame.TextOpening("Isi garis yang kosong dengan huruf sesuai gambar!!!", "SB");
         }
         else if (namaScene == NamaScene.PilihanGanda)
         {
             openingTextMiniGame.gameObject.SetActive(true);
-            openingTextMiniGame.TextOpening("Pilih Jawaban Yang Benar!!!");
+            openingTextMiniGame.TextOpening("Pilih Jawaban Yang Benar!!!", "PG");
         }
         else if (namaScene == NamaScene.BenarSalah)
         {
             openingTextMiniGame.gameObject.SetActive(true);
-            openingTextMiniGame.TextOpening("Pilih Jawaban Yang Benar!!!");
+            openingTextMiniGame.TextOpening("Pilih Jawaban Yang Benar!!!", "BS");
         }
     }
 

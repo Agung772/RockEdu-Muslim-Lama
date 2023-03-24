@@ -8,6 +8,7 @@ public class ScoreUI : MonoBehaviour
 
     public Animator animatorBintang;
     public GameObject[] text;
+    public GameObject confetti;
 
     public void CallScoreUI(int jumlahBintang)
     {
@@ -16,12 +17,16 @@ public class ScoreUI : MonoBehaviour
             text[3].SetActive(true);
 
             animatorBintang.SetTrigger("B3");
+
+            confetti.SetActive(true);
         }
         else if (jumlahBintang == 2)
         {
             text[2].SetActive(true);
 
             animatorBintang.SetTrigger("B2");
+
+            confetti.SetActive(true);
         }
         else if (jumlahBintang == 1)
         {
