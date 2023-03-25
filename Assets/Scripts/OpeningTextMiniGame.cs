@@ -38,6 +38,17 @@ public class OpeningTextMiniGame : MonoBehaviour
             }
 
         }
+        else if (minigame == "BS")
+        {
+            StartCoroutine(Coroutine());
+            IEnumerator Coroutine()
+            {
+                textOpening.gameObject.SetActive(true);
+                yield return new WaitForSeconds(2);
+                textOpening.text = textKedua;
+                clickTextKedua = true;
+            }
+        }
         else
         {
             StartCoroutine(Coroutine());
@@ -64,6 +75,15 @@ public class OpeningTextMiniGame : MonoBehaviour
                 }
                 gameObject.SetActive(false);
                 GameplayPilihanGanda.instance.StartAwalPG();
+            }
+            else if (miniGame == "BS")
+            {
+                if (AnimasiManager.instance.animasiScreenCTD.gameObject.activeInHierarchy)
+                {
+                    AnimasiManager.instance.AnimasiScreenCTD(false);
+                }
+                gameObject.SetActive(false);
+                GameplayBenarSalah.instance.StartAwalBS();
             }
             else
             {

@@ -1188,11 +1188,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!224 &860985803 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4226954238681795359, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
-  m_PrefabInstance: {fileID: 268023798}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1097598990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1304,8 +1299,8 @@ MonoBehaviour:
   salah: 0
   totalPertanyaanText: {fileID: 226036539}
   benarSalahPrefab: {fileID: 4447019742842860497, guid: feb7a2898b48bb245af6e5e345daa04d, type: 3}
-  spawnSoal: {fileID: 860985803}
-  unSpawnSoal: {fileID: 1430264995}
+  spawnSoal: {fileID: 1792598573}
+  transisiNext: {fileID: 2097134467}
   listPertanyaanBab1:
   - pertanyaan: 
     jawaban: 
@@ -1449,11 +1444,6 @@ MonoBehaviour:
   - pertanyaan: Iblis mau menghormati Nabi Adam dan Hawa
     jawaban: SALAH
   jumlahSoal: 0
---- !u!224 &1430264995 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 853695893232460554, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
-  m_PrefabInstance: {fileID: 268023798}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1627380121
 GameObject:
   m_ObjectHideFlags: 0
@@ -1529,6 +1519,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1627380121}
   m_CullTransparentMesh: 1
+--- !u!224 &1792598573 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6268659308179653823, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+  m_PrefabInstance: {fileID: 268023798}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1850229028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1678,3 +1673,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2097134467 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7259668462125717003, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+  m_PrefabInstance: {fileID: 268023798}
+  m_PrefabAsset: {fileID: 0}

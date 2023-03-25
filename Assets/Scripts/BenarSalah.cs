@@ -8,9 +8,10 @@ public class BenarSalah : MonoBehaviour
 {
     public bool sudahDijawab;
     public string jawabanYangBenar;
+    public string condition;
     public TextMeshProUGUI soalText;
 
-    public Image overlayImage, benarImage, salahImage;
+    public Image benarImage, salahImage;
 
 
     private IEnumerator Start()
@@ -55,15 +56,13 @@ public class BenarSalah : MonoBehaviour
         {
             if (button.GetComponent<ButtonScript>().jawaban == jawabanYangBenar)
             {
-                overlayImage.gameObject.SetActive(true);
-                overlayImage.color = InputColor.instance.greenTransparant;
                 GameplayBenarSalah.instance.benar++;
+                condition = "Benar";
             }
             else
             {
-                overlayImage.gameObject.SetActive(true);
-                overlayImage.color = InputColor.instance.redTranparant;
                 GameplayBenarSalah.instance.salah++;
+                condition = "Salah";
             }
 
             sudahDijawab = true;

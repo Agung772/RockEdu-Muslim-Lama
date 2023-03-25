@@ -14,8 +14,9 @@ public class GameplayBenarSalah : MonoBehaviour
 
     public TextMeshProUGUI totalPertanyaanText;
     public GameObject benarSalahPrefab;
-    public Transform spawnSoal, unSpawnSoal;
+    public Transform spawnSoal;
 
+    public Animator transisiNext;
 
     [Serializable]
     public struct ListPertanyaan
@@ -49,11 +50,10 @@ public class GameplayBenarSalah : MonoBehaviour
         if (bab == 1 || bab == 2 || bab == 3 || bab == 5 || bab == 6 || bab == 7 || bab == 8 || bab == 9 || bab == 10) jumlahSoal = 5;
         else if (bab == 4) jumlahSoal = 10;
 
-        NextPertanyaan();
     }
 
     //Memunculkan pertanyaan berdasarkan bab
-    public void NextPertanyaan()
+    public void NextPertanyaan(int delay)
     {
         //Pertanyaan sudah habis 
         //Saving score
@@ -88,9 +88,23 @@ public class GameplayBenarSalah : MonoBehaviour
 
             if (spawnSoal.childCount != 0)
             {
-                spawnSoal.GetChild(0).SetParent(unSpawnSoal);
-                unSpawnSoal.GetChild(0).GetComponent<Animator>().SetTrigger("Exit");
-                Destroy(unSpawnSoal.GetChild(0).gameObject, 1.5f);
+                string condition = spawnSoal.GetChild(0).gameObject.GetComponent<BenarSalah>().condition;
+                if (condition == "Benar")
+                {
+                    TransisiNext("Benar");
+                }
+                else
+                {
+                    TransisiNext("Salah");
+                }
+
+                StartCoroutine(CoroutineA());
+                IEnumerator CoroutineA()
+                {
+                    yield return new WaitForSeconds(delay);
+                    //Destroy soal sebelumnnya
+                    Destroy(spawnSoal.GetChild(0).gameObject);
+                }
 
             }
 
@@ -145,5 +159,22 @@ public class GameplayBenarSalah : MonoBehaviour
     {
         GameObject pilihanGanda = Instantiate(benarSalahPrefab, spawnSoal);
         pilihanGanda.GetComponent<BenarSalah>().SpawnBenarSalah(soal, jawaban);
+    }
+
+    public void StartAwalBS()
+    {
+        NextPertanyaan(0);
+    }
+
+    public void TransisiNext(string hasil)
+    {
+        if (hasil == "Benar")
+        {
+            transisiNext.SetTrigger("Benar");
+        }
+        else
+        {
+            transisiNext.SetTrigger("Salah");
+        }
     }
 }

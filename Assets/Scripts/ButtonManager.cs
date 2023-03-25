@@ -107,7 +107,7 @@ public class ButtonManager : MonoBehaviour
         {
             nextPertanyaanBenarSalah = false;
             nextPertanyaanBS.interactable = false;
-            GameplayBenarSalah.instance.NextPertanyaan();
+            GameplayBenarSalah.instance.NextPertanyaan(3);
         }
 
     }
