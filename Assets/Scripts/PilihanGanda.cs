@@ -25,6 +25,8 @@ public class PilihanGanda : MonoBehaviour
         jawabanImage[1].GetComponent<Button>().interactable = true;
         jawabanImage[2].GetComponent<Button>().interactable = true;
 
+        gameObject.GetComponent<Animator>().enabled = false;
+
     }
     public void SpawnPilihanGanda(string soal, string jawabanA, string jawabanB, string jawabanC)
     {

@@ -14,6 +14,7 @@ public class OpeningTextMiniGame : MonoBehaviour
     public GameObject bgOpening;
 
     public Animator screenCTD;
+    public Animator openingBS;
     string miniGame;
 
     private void Awake()
@@ -46,10 +47,10 @@ public class OpeningTextMiniGame : MonoBehaviour
             StartCoroutine(Coroutine());
             IEnumerator Coroutine()
             {
-                textOpening.gameObject.SetActive(true);
-                yield return new WaitForSeconds(2);
-                textOpening.text = textKedua;
+                openingBS.gameObject.SetActive(true);
+                yield return new WaitForSeconds(3.5f);
                 clickTextKedua = true;
+
             }
         }
         else if (minigame == "CTD")
@@ -96,12 +97,17 @@ public class OpeningTextMiniGame : MonoBehaviour
             }
             else if (miniGame == "BS")
             {
-                if (AnimasiManager.instance.animasiScreenCTD.gameObject.activeInHierarchy)
+
+                StartCoroutine(Coroutine());
+                IEnumerator Coroutine()
                 {
-                    AnimasiManager.instance.AnimasiScreenCTD(false);
+                    openingBS.SetTrigger("Exit");
+                    yield return new WaitForSeconds(1);
+                    GameplayBenarSalah.instance.StartAwalBS();
+                    gameObject.SetActive(false);
+
                 }
-                gameObject.SetActive(false);
-                GameplayBenarSalah.instance.StartAwalBS();
+
             }
             else if (miniGame == "CTD")
             {
@@ -123,10 +129,6 @@ public class OpeningTextMiniGame : MonoBehaviour
             }
             else
             {
-                if (AnimasiManager.instance.animasiScreenCTD.gameObject.activeInHierarchy)
-                {
-                    AnimasiManager.instance.AnimasiScreenCTD(false);
-                }
                 gameObject.SetActive(false);
             }
 
