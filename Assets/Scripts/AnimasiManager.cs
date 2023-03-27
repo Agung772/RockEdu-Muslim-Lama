@@ -21,13 +21,13 @@ public class AnimasiManager : MonoBehaviour
             IEnumerator Coroutine()
             {
                 yield return new WaitForSeconds(1);
-                animasiScreenCTD.SetBool("Close", false);
+                animasiScreenCTD.SetTrigger("Close");
             }
         }
         else
         {
             animasiScreenCTD.gameObject.SetActive(true);
-            animasiScreenCTD.SetBool("Close", true);
+            animasiScreenCTD.SetTrigger("Open");
         }
     }
 }
