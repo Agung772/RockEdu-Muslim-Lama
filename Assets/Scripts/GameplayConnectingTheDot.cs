@@ -95,22 +95,17 @@ public class GameplayConnectingTheDot : MonoBehaviour
         }
         if (checkDot == dotController.Length)
         {
-            if (batrai == 3)
-            {
-                ButtonManager.instance.SpawnScoreUI(batrai);
-            }
-            else if (batrai == 2)
-            {
-                ButtonManager.instance.SpawnScoreUI(batrai);
-            }
-            else if (batrai == 1)
-            {
-                ButtonManager.instance.SpawnScoreUI(batrai);
-            }
-
             //Save score
             SaveManager.instance.GameSave.SaveScoreMiniGame(SaveManager.instance.GameSave._ScoreConnectingTheDot, batrai);
-            AnimasiManager.instance.AnimasiScreenCTD(true);
+            AnimasiManager.instance.AnimasiScreenCTD(false);
+
+
+            StartCoroutine(Coroutine());
+            IEnumerator Coroutine()
+            {
+                yield return new WaitForSeconds(1);
+                ButtonManager.instance.SpawnScoreUI(batrai);
+            }
         }
     }
 
@@ -137,13 +132,18 @@ public class GameplayConnectingTheDot : MonoBehaviour
             batraiUI.transform.GetChild(4).gameObject.SetActive(false);
             batraiUI.transform.GetChild(5).gameObject.SetActive(false);
 
-            ButtonManager.instance.SpawnScoreUI(batrai);
-            AnimasiManager.instance.AnimasiScreenCTD(true);
+            AnimasiManager.instance.AnimasiScreenCTD(false);
+
+            StartCoroutine(Coroutine());
+            IEnumerator Coroutine()
+            {
+                yield return new WaitForSeconds(1);
+                ButtonManager.instance.SpawnScoreUI(batrai);
+            }
 
         }
 
     }
-
     //Random Start Dot
     int randomSD;
     bool[] randomSDBool;

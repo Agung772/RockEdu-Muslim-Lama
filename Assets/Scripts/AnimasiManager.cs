@@ -17,12 +17,7 @@ public class AnimasiManager : MonoBehaviour
     {
         if (!condition)
         {
-            StartCoroutine(Coroutine());
-            IEnumerator Coroutine()
-            {
-                yield return new WaitForSeconds(1);
-                animasiScreenCTD.SetTrigger("Close");
-            }
+            animasiScreenCTD.SetTrigger("Close");
         }
         else
         {

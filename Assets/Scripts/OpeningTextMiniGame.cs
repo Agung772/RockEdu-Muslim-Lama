@@ -130,7 +130,7 @@ public class OpeningTextMiniGame : MonoBehaviour
                 gameObject.SetActive(false);
             }
 
-
+            clickTextKedua = false;
 
 
         }
