@@ -24,6 +24,7 @@ public class GameplaySpellingBee : MonoBehaviour
     public GameObject bateraiUI1, bateraiUI2;
     public GameObject benarUI;
     public GameObject starSpray;
+    public Animator transisiNextSB;
 
     public SlotHurufController[] slotHurufController;
     public HurufController[] hurufController;
@@ -228,16 +229,16 @@ public class GameplaySpellingBee : MonoBehaviour
 
     void BenarUI()
     {
-        starSpray.SetActive(true);
 
-        /*
+
+
         StartCoroutine(Coroutine());
         IEnumerator Coroutine()
         {
-            benarUI.SetActive(true);
-            yield return new WaitForSeconds(1);
-            benarUI.SetActive(false);
+            transisiNextSB.SetTrigger("Benar");
+            yield return new WaitForSeconds(3);
+            starSpray.SetActive(true);
         }
-        */
+
     }
 }

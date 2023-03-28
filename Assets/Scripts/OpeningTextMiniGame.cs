@@ -15,6 +15,7 @@ public class OpeningTextMiniGame : MonoBehaviour
 
     public Animator screenCTD;
     public Animator openingBS;
+    public Animator openingSB;
     string miniGame;
 
     private void Awake()
@@ -65,6 +66,16 @@ public class OpeningTextMiniGame : MonoBehaviour
                 yield return new WaitForSeconds(1);
                 yield return new WaitForSeconds(2);
                 textOpening.text = textKedua;
+                clickTextKedua = true;
+            }
+        }
+        else if (minigame == "SB")
+        {
+            StartCoroutine(Coroutine());
+            IEnumerator Coroutine()
+            {
+                openingSB.gameObject.SetActive(true);
+                yield return new WaitForSeconds(2.6f);
                 clickTextKedua = true;
             }
         }
@@ -126,6 +137,19 @@ public class OpeningTextMiniGame : MonoBehaviour
 
 
                 //GameplayBenarSalah.instance.StartAwalBS();
+            }
+            else if (miniGame == "SB")
+            {
+
+                StartCoroutine(Coroutine());
+                IEnumerator Coroutine()
+                {
+                    openingSB.SetTrigger("Exit");
+                    yield return new WaitForSeconds(5.5f);
+                    gameObject.SetActive(false);
+
+                }
+
             }
             else
             {
