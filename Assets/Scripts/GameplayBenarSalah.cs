@@ -17,6 +17,7 @@ public class GameplayBenarSalah : MonoBehaviour
     public Transform spawnSoal;
 
     public Animator transisiNext;
+    public Animator bgBenarSalah;
 
     [Serializable]
     public struct ListPertanyaan
@@ -164,6 +165,7 @@ public class GameplayBenarSalah : MonoBehaviour
     public void StartAwalBS()
     {
         NextPertanyaan(0);
+        bgBenarSalah.SetTrigger("Start");
     }
 
     public void TransisiNext(string hasil)

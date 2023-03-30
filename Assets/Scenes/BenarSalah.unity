@@ -169,22 +169,6 @@ PrefabInstance:
       propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 280947994159241459, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1949.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 280947994159241459, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 1114.9688
-      objectReference: {fileID: 0}
-    - target: {fileID: 280947994159241459, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -1.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 280947994159241459, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 300493741691283076, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1115,6 +1099,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+--- !u!95 &523684384 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 20719709966293410, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
+  m_PrefabInstance: {fileID: 268023798}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &748394609
 GameObject:
   m_ObjectHideFlags: 0
@@ -1321,6 +1310,7 @@ MonoBehaviour:
   benarSalahPrefab: {fileID: 4447019742842860497, guid: feb7a2898b48bb245af6e5e345daa04d, type: 3}
   spawnSoal: {fileID: 1792598573}
   transisiNext: {fileID: 2097134467}
+  bgBenarSalah: {fileID: 523684384}
   listPertanyaanBab1:
   - pertanyaan: 
     jawaban: 
