@@ -36,7 +36,7 @@ public class PlayerControllerMGPF : MonoBehaviour
     private void Start()
     {
         LoadData();
-
+        
     }
     void Update()
     {

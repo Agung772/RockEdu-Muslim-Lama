@@ -500,7 +500,7 @@ PrefabInstance:
     - target: {fileID: 3223860822696028945, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: dd62271a62316ff4e9f1bb7b4c584c4b, type: 3}
+      objectReference: {fileID: 21300000, guid: 5bdd2d87be31a5f4682f3e21008680b5, type: 3}
     - target: {fileID: 3223860822696028945, guid: 2e2b826aee5cf4048b6b88e11763a878, type: 3}
       propertyPath: m_RaycastTarget
       value: 0

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 3.1.0 commit date:2022-03-08, commit time:18:16, hash:c77597cd0e15</authoring_tool>
+    </contributor>
+    <created>2023-03-28T08:47:16</created>
+    <modified>2023-03-28T08:47:16</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="interact2-effect">
+      <profile_COMMON>
+        <newparam sid="Interact2_psd-surface">
+          <surface type="2D">
+            <init_from>Interact2_psd</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Interact2_psd-sampler">
+          <sampler2D>
+            <source>Interact2_psd-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 1 9.11305e-4 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="Interact2_psd-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <transparent opaque="A_ONE">
+              <color sid="alpha">0 0 0 0.4954128</color>
+            </transparent>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="Interact2_psd" name="Interact2_psd">
+      <init_from>/D:/Folder%20(Project)/3D%20Modeling/Texture/Edukidos_Environment/Photoshop/Interact2.psd</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="interact2-material" name="interact2">
+      <instance_effect url="#interact2-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Circle_019-mesh" name="Circle.019">
+      <mesh>
+        <source id="Circle_019-mesh-positions">
+          <float_array id="Circle_019-mesh-positions-array" count="96">-0.4495633 -5.16571e-7 -0.9089971 -0.2635885 -5.19641e-7 -0.9792367 -0.618262 -5.11973e-7 -0.8038259 -0.7632008 -5.06026e-7 -0.6677628 -0.8788093 -4.98957e-7 -0.5060395 -0.9606468 -4.91038e-7 -0.3248683 -1.005566 -4.82573e-7 -0.1312127 -1.011844 -4.73887e-7 0.06748473 -0.9792356 -4.65315e-7 0.2635892 -0.9089959 -4.57186e-7 0.449564 -0.8038229 -4.49812e-7 0.6182622 -0.667761 -4.43477e-7 0.7632003 -0.5060364 -4.38423e-7 0.8788096 -0.3248662 -4.34846e-7 0.9606472 -0.1312106 -4.32882e-7 1.005567 0.06748747 -4.32608e-7 1.011843 0.263592 -4.34033e-7 0.9792349 0.4495667 -4.37104e-7 0.9089952 0.6182634 -4.41701e-7 0.8038236 0.7632024 -4.47648e-7 0.6677615 0.8788126 -4.54718e-7 0.5060366 0.9606484 -4.62637e-7 0.3248668 1.00557 -4.71102e-7 0.1312108 1.011845 -4.79787e-7 -0.06748706 0.979237 -4.88359e-7 -0.2635915 0.9089972 -4.96488e-7 -0.4495663 0.8038264 -5.03862e-7 -0.6182641 0.6677642 -5.10198e-7 -0.7632032 0.5060396 -5.15251e-7 -0.8788124 0.3248677 -5.18828e-7 -0.9606486 0.1312119 -5.20792e-7 -1.005569 -0.06748408 -5.21066e-7 -1.011845</float_array>
+          <technique_common>
+            <accessor source="#Circle_019-mesh-positions-array" count="32" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Circle_019-mesh-normals">
+          <float_array id="Circle_019-mesh-normals-array" count="90">0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#Circle_019-mesh-normals-array" count="30" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Circle_019-mesh-map-0">
+          <float_array id="Circle_019-mesh-map-0-array" count="180">0.6572139 0.830967 0.2655865 0.5095671 0.5869861 0.1179397 0.5869861 0.1179397 0.6572134 0.1179395 0.726091 0.1316401 0.726091 0.1316401 0.7909724 0.1585144 0.8493643 0.1975307 0.8493643 0.1975307 0.8990222 0.2471885 0.9380384 0.3055802 0.9380384 0.3055802 0.9649132 0.3704618 0.8493643 0.1975307 0.9649132 0.3704618 0.9786142 0.4393392 0.8493643 0.1975307 0.9786142 0.4393392 0.9786142 0.5095666 0.9649136 0.5784444 0.9649136 0.5784444 0.9380385 0.6433258 0.9786142 0.4393392 0.9380385 0.6433258 0.8990228 0.7017171 0.9786142 0.4393392 0.8990228 0.7017171 0.8493645 0.7513753 0.6572139 0.830967 0.8493645 0.7513753 0.7909732 0.7903916 0.6572139 0.830967 0.7909732 0.7903916 0.7260915 0.8172663 0.6572139 0.830967 0.6572139 0.830967 0.5869867 0.830967 0.518109 0.8172665 0.518109 0.8172665 0.4532284 0.7903919 0.6572139 0.830967 0.4532284 0.7903919 0.3948364 0.7513759 0.6572139 0.830967 0.3948364 0.7513759 0.3451779 0.7017178 0.3061622 0.6433265 0.3061622 0.6433265 0.2792868 0.5784444 0.2655865 0.5095671 0.2655865 0.5095671 0.2655865 0.4393398 0.2792871 0.3704621 0.2792871 0.3704621 0.3061615 0.3055807 0.3451774 0.2471891 0.3451774 0.2471891 0.3948353 0.1975311 0.4532276 0.158515 0.4532276 0.158515 0.5181087 0.1316401 0.5869861 0.1179397 0.5869861 0.1179397 0.726091 0.1316401 0.9786142 0.4393392 0.726091 0.1316401 0.8493643 0.1975307 0.9786142 0.4393392 0.3948364 0.7513759 0.3061622 0.6433265 0.6572139 0.830967 0.3061622 0.6433265 0.2655865 0.5095671 0.6572139 0.830967 0.2655865 0.5095671 0.2792871 0.3704621 0.3451774 0.2471891 0.3451774 0.2471891 0.4532276 0.158515 0.2655865 0.5095671 0.4532276 0.158515 0.5869861 0.1179397 0.2655865 0.5095671 0.9786142 0.4393392 0.8990228 0.7017171 0.5869861 0.1179397 0.8990228 0.7017171 0.6572139 0.830967 0.5869861 0.1179397</float_array>
+          <technique_common>
+            <accessor source="#Circle_019-mesh-map-0-array" count="90" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Circle_019-mesh-vertices">
+          <input semantic="POSITION" source="#Circle_019-mesh-positions"/>
+        </vertices>
+        <triangles material="interact2-material" count="30">
+          <input semantic="VERTEX" source="#Circle_019-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Circle_019-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Circle_019-mesh-map-0" offset="2" set="0"/>
+          <p>15 0 0 23 0 1 31 0 2 31 1 3 1 1 4 0 1 5 0 2 6 2 2 7 3 2 8 3 3 9 4 3 10 5 3 11 5 4 12 6 4 13 3 4 14 6 5 15 7 5 16 3 5 17 7 6 18 8 6 19 9 6 20 9 7 21 10 7 22 7 7 23 10 8 24 11 8 25 7 8 26 11 9 27 12 9 28 15 9 29 12 10 30 13 10 31 15 10 32 13 11 33 14 11 34 15 11 35 15 12 36 16 12 37 17 12 38 17 13 39 18 13 40 15 13 41 18 14 42 19 14 43 15 14 44 19 15 45 20 15 46 21 15 47 21 16 48 22 16 49 23 16 50 23 17 51 24 17 52 25 17 53 25 18 54 26 18 55 27 18 56 27 19 57 28 19 58 29 19 59 29 20 60 30 20 61 31 20 62 31 21 63 0 21 64 7 21 65 0 22 66 3 22 67 7 22 68 19 23 69 21 23 70 15 23 71 21 24 72 23 24 73 15 24 74 23 25 75 25 25 76 27 25 77 27 26 78 29 26 79 23 26 80 29 27 81 31 27 82 23 27 83 7 28 84 11 28 85 31 28 86 11 29 87 15 29 88 31 29 89</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Circle_007" name="Circle.007" type="NODE">
+        <matrix sid="transform">1 0 0 4.712917 0 -4.37114e-8 -1 6.494818 0 1 -4.37114e-8 2.25944 0 0 0 1</matrix>
+        <instance_geometry url="#Circle_019-mesh" name="Circle.007">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="interact2-material" target="#interact2-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
