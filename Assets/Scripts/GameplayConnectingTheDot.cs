@@ -116,21 +116,18 @@ public class GameplayConnectingTheDot : MonoBehaviour
 
         if (batrai == 2)
         {
-            batraiUI.transform.GetChild(3).gameObject.SetActive(true);
-            batraiUI.transform.GetChild(4).gameObject.SetActive(true);
-            batraiUI.transform.GetChild(5).gameObject.SetActive(false);
+
+            batraiUI.transform.GetChild(5).GetComponent<Animator>().SetTrigger("Exit");
         }
         else if (batrai == 1)
         {
-            batraiUI.transform.GetChild(3).gameObject.SetActive(true);
-            batraiUI.transform.GetChild(4).gameObject.SetActive(false);
-            batraiUI.transform.GetChild(5).gameObject.SetActive(false);
+
+            batraiUI.transform.GetChild(4).GetComponent<Animator>().SetTrigger("Exit");
         }
         else if (batrai == 0)
         {
-            batraiUI.transform.GetChild(3).gameObject.SetActive(false);
-            batraiUI.transform.GetChild(4).gameObject.SetActive(false);
-            batraiUI.transform.GetChild(5).gameObject.SetActive(false);
+
+            batraiUI.transform.GetChild(3).GetComponent<Animator>().SetTrigger("Exit");
 
             AnimasiManager.instance.AnimasiScreenCTD(false);
 

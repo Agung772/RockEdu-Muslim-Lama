@@ -12,7 +12,6 @@ public class GameplayBenarSalah : MonoBehaviour
     public int bab;
     public int urutanPertanyaan, benar, salah;
 
-    public TextMeshProUGUI totalPertanyaanText;
     public GameObject benarSalahPrefab;
     public Transform spawnSoal;
 
@@ -110,7 +109,7 @@ public class GameplayBenarSalah : MonoBehaviour
             }
 
             urutanPertanyaan++;
-            totalPertanyaanText.text = urutanPertanyaan + "/" + jumlahSoal;
+
 
             if (bab == 1)
             {

@@ -16,8 +16,11 @@ public class ButtonManager : MonoBehaviour
     [Space]
     public TextMeshProUGUI namaPlayer;
     public TextMeshProUGUI kelas;
-    public TextMeshProUGUI namaKarakter;
     public TextMeshProUGUI bab;
+
+    public GameObject
+        cowokUI,
+        cewekUI;
 
 
     private void Awake()
@@ -29,11 +32,21 @@ public class ButtonManager : MonoBehaviour
     {
         namaPlayer.text = SaveManager.instance.GameSave.namaPlayer;
         kelas.text = SaveManager.instance.GameSave.kelas;
-        namaKarakter.text = SaveManager.instance.GameSave.karakter;
         bab.text = "Bab : " + SaveManager.instance.GameSave.bab;
 
         nextPertanyaanPG.interactable = false;
         nextPertanyaanBS.interactable = false;
+
+        if (SaveManager.instance.GameSave.karakter == "Cowok")
+        {
+            cowokUI.SetActive(true);
+            cewekUI.SetActive(false);
+        }
+        else
+        {
+            cowokUI.SetActive(false);
+            cewekUI.SetActive(true);
+        }
     }
     private void Update()
     {

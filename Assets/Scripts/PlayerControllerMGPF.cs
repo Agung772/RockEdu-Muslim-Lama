@@ -5,7 +5,10 @@ using UnityEngine.AI;
 
 public class PlayerControllerMGPF : MonoBehaviour
 {
+    public static PlayerControllerMGPF instance;
+
     public bool useDisplay;
+    public bool clickUI;
 
     public GameObject destinationPrefab;
     public NavMeshAgent navMeshAgent;
@@ -32,6 +35,10 @@ public class PlayerControllerMGPF : MonoBehaviour
         _Senang = "Senang", 
         _Sedih = "Sedih";
 
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {
@@ -94,6 +101,8 @@ public class PlayerControllerMGPF : MonoBehaviour
     }
     public void MouseUp()
     {
+        if (clickUI) return;
+
         if (Input.GetMouseButtonUp(0))
         {
 

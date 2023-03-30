@@ -96,4 +96,16 @@ public class GameManager : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void ClickUI(bool click)
+    {
+        if (!click)
+        {
+            PlayerControllerMGPF.instance.clickUI = false;
+        }
+        else if (click)
+        {
+            PlayerControllerMGPF.instance.clickUI = true;
+        }
+    }
 }

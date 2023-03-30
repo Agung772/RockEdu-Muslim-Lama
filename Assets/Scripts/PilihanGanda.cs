@@ -9,6 +9,7 @@ public class PilihanGanda : MonoBehaviour
     public bool sudahDijawab;
     public string condition;
     public TextMeshProUGUI soalTextPro;
+    public TextMeshProUGUI totalPertanyaanText;
 
     public Image[] jawabanImage;
     public TextMeshProUGUI[] jawabanText;
@@ -19,6 +20,8 @@ public class PilihanGanda : MonoBehaviour
         jawabanImage[1].GetComponent<Button>().interactable = false;
         jawabanImage[2].GetComponent<Button>().interactable = false;
 
+        totalPertanyaanText.text = GameplayPilihanGanda.instance.urutanPertanyaan + "/" + 5;
+
         yield return new WaitForSeconds(1.5f);
 
         jawabanImage[0].GetComponent<Button>().interactable = true;
@@ -26,6 +29,8 @@ public class PilihanGanda : MonoBehaviour
         jawabanImage[2].GetComponent<Button>().interactable = true;
 
         gameObject.GetComponent<Animator>().enabled = false;
+
+
 
     }
     public void SpawnPilihanGanda(string soal, string jawabanA, string jawabanB, string jawabanC)

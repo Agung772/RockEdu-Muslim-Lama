@@ -12,7 +12,6 @@ public class GameplayPilihanGanda : MonoBehaviour
     public int bab;
     public int urutanPertanyaan, benar, salah;
 
-    public TextMeshProUGUI totalPertanyaanText;
     public GameObject pilihanGandaPrefab;
     public Animator transisiNext;
     public Transform spawnSoal, unSpawnSoal;
@@ -116,7 +115,6 @@ public class GameplayPilihanGanda : MonoBehaviour
 
                 //Next
                 urutanPertanyaan++;
-                totalPertanyaanText.text = urutanPertanyaan + "/" + (listPertanyaanBab1.Count - 1);
 
                 if (bab == 1)
                 {
