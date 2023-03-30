@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -13,10 +14,10 @@ public class ButtonManager : MonoBehaviour
 
     [Space]
     [Space]
-    public Text namaPlayer;
-    public Text kelas;
-    public Text namaKarakter;
-    public Text bab;
+    public TextMeshProUGUI namaPlayer;
+    public TextMeshProUGUI kelas;
+    public TextMeshProUGUI namaKarakter;
+    public TextMeshProUGUI bab;
 
 
     private void Awake()
@@ -26,9 +27,9 @@ public class ButtonManager : MonoBehaviour
 
     private void Start()
     {
-        namaPlayer.text = "Nama player : " + SaveManager.instance.GameSave.namaPlayer;
-        kelas.text = "Kelas : " + SaveManager.instance.GameSave.kelas;
-        namaKarakter.text = "Nama karakter : " + SaveManager.instance.GameSave.karakter;
+        namaPlayer.text = SaveManager.instance.GameSave.namaPlayer;
+        kelas.text = SaveManager.instance.GameSave.kelas;
+        namaKarakter.text = SaveManager.instance.GameSave.karakter;
         bab.text = "Bab : " + SaveManager.instance.GameSave.bab;
 
         nextPertanyaanPG.interactable = false;
