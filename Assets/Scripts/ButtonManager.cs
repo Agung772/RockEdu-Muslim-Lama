@@ -110,6 +110,8 @@ public class ButtonManager : MonoBehaviour
             nextPertanyaanPilihanGanda = false;
             nextPertanyaanPG.interactable = false;
             GameplayPilihanGanda.instance.NextPertanyaan(3);
+
+            AudioManager.instance.SfxClickPG();
         }
 
     }

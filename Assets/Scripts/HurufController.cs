@@ -35,8 +35,14 @@ public class HurufController : MonoBehaviour
         hurufLain = new Transform[count.Length];
     }
 
+    float start;
     private void Update()
     {
+        if (start < 2)
+        {
+            start += Time.deltaTime;
+        }
+
         if (!hurufAktif) return;
 
         if (back)
@@ -45,14 +51,13 @@ public class HurufController : MonoBehaviour
             GetComponent<Rigidbody>().useGravity = false;
             transform.position = Vector3.Lerp(transform.position, savePosisi, 5 * Time.deltaTime);
 
-            if (Vector3.Distance(transform.position, savePosisi) < 0.1)
+            if (Vector3.Distance(transform.position, savePosisi) < 0.2f)
             {
                 back = false;
                 GetComponent<BoxCollider>().isTrigger = false;
                 GetComponent<Rigidbody>().useGravity = true;
             }
         }
-
 
         CollisionNgestay(0);
         CollisionNgestay(1);
@@ -68,7 +73,7 @@ public class HurufController : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (!hurufAktif) return;
+        if (!hurufAktif || GameplaySpellingBee.instance.finis) return;
 
         click = true;
         mousePosition = Input.mousePosition - GetMousePos();
@@ -76,7 +81,7 @@ public class HurufController : MonoBehaviour
 
     private void OnMouseDrag()
     {
-        if (!hurufAktif) return;
+        if (!hurufAktif || GameplaySpellingBee.instance.finis) return;
 
         transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition - mousePosition);
         GetComponent<Rigidbody>().velocity = Vector3.zero;
@@ -84,7 +89,7 @@ public class HurufController : MonoBehaviour
 
     private void OnMouseUp()
     {
-        if (!hurufAktif) return;
+        if (!hurufAktif || GameplaySpellingBee.instance.finis) return;
 
         click = false;
     }
@@ -93,6 +98,11 @@ public class HurufController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (!click && start >= 2)
+        {
+            AudioManager.instance.SfxHurufJatuhSB();
+        }
+
         if (!hurufAktif) return;
 
         if (collision.collider.GetComponent<HurufController>())
@@ -109,6 +119,8 @@ public class HurufController : MonoBehaviour
                 }
             }
         }
+
+
     }
     private void OnCollisionStay(Collision collision)
     {

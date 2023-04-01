@@ -16,14 +16,6 @@ public class AudioManager : MonoBehaviour
     public AudioSource audioSourceBgm;
     public AudioSource audioSourceSfx;
 
-    //Input Audio
-    public AudioClip 
-        bgmConnectTheDots,
-        bgmMetaGame,
-        bgmHome;
-
-    public AudioClip sfxScore, sfxGameOver, sfxHoldClick, sfxEnterMinigame, sfxPause, sfxUnpause ,sfxBenar, sfxSalah;
-
     string SaveBgm = "SaveBgm";
     string SaveSfx = "SaveSfx";
 
@@ -88,22 +80,126 @@ public class AudioManager : MonoBehaviour
         volumeSliderSfx.value = volumeAudioSfx;
     }
 
-
+    [SerializeField]
+    string SPC0 = "-------SPACE-------";
     //Audio BGM
+    [SerializeField]
+    AudioClip
+        bukaPintu,
+        tutupPintu;
+
+    public void BukaPintu() { if (bukaPintu != null) audioSourceSfx.PlayOneShot(bukaPintu); }
+    public void TutupPintu() { if (tutupPintu != null) audioSourceSfx.PlayOneShot(tutupPintu); }
+
+
+    [SerializeField]
+    string SPC1 = "-------SPACE-------";
+    //Audio BGM
+    [SerializeField]
+    AudioClip
+        bgmConnectTheDots,
+        bgmMetaGame,
+        bgmHome;
+
     public void BgmConnectTheDots() { audioSourceBgm.clip = bgmConnectTheDots; audioSourceBgm.Play(); }
     public void BgmMetaGame() { audioSourceBgm.clip = bgmMetaGame; audioSourceBgm.Play(); }
     public void BgmHome() { audioSourceBgm.clip = bgmHome; audioSourceBgm.Play(); }
 
 
+    [SerializeField]
+    string SPC2 = "-------SPACE-------";
     //Audio SFX
+    [SerializeField]
+    AudioClip
+        sfxPause,
+        sfxUnpause;
+    public void SfxPause() { if (sfxPause != null) audioSourceSfx.PlayOneShot(sfxPause); }
+    public void SfxUnpause() { if (sfxUnpause != null) audioSourceSfx.PlayOneShot(sfxUnpause); }
+
+
+    [SerializeField]
+    string SPC3 = "-------SPACE-------";
+    //Audio SFX CTD
+    [SerializeField]
+    AudioClip
+        sfxScore,
+        sfxGameOver,
+        sfxHoldClick,
+        sfxEnterMinigame,
+        sfxBenar,
+        sfxSalah;
+
     public void SfxScore() { if (sfxScore != null) audioSourceSfx.PlayOneShot(sfxScore); }
     public void SfxGameOver() { if (sfxGameOver != null) audioSourceSfx.PlayOneShot(sfxGameOver); }
     public void SfxHoldClick() { if (sfxHoldClick != null) audioSourceSfx.PlayOneShot(sfxHoldClick); }
     public void SfxEnterMinigame() { if (sfxEnterMinigame != null) audioSourceSfx.PlayOneShot(sfxEnterMinigame); }
-    public void SfxPause() { if (sfxPause != null) audioSourceSfx.PlayOneShot(sfxPause); }
-    public void SfxUnpause() { if (sfxUnpause != null) audioSourceSfx.PlayOneShot(sfxUnpause); }
     public void SfxBenar() { if (sfxBenar != null) audioSourceSfx.PlayOneShot(sfxBenar); }
     public void SfxSalah() { if (sfxSalah != null) audioSourceSfx.PlayOneShot(sfxSalah); }
+
+
+    [SerializeField]
+    string SPC4 = "-------SPACE-------";
+    //Audio SFX PG
+    [SerializeField]
+    AudioClip
+        sfxScorePG,
+        sfxClickPG,
+        sfxRocketPG,
+        sfxConfettiPG,
+        sfxBenarPG,
+        sfxSalahPG;
+
+    public void SfxScorePG() { if (sfxScorePG != null) audioSourceSfx.PlayOneShot(sfxScorePG); }
+    public void SfxClickPG() { if (sfxClickPG != null) audioSourceSfx.PlayOneShot(sfxClickPG); }
+    public void SfxRocketPG() { if (sfxRocketPG != null) audioSourceSfx.PlayOneShot(sfxRocketPG); }
+    public void SfxConfettiPG() { if (sfxConfettiPG != null) audioSourceSfx.PlayOneShot(sfxConfettiPG); }
+    public void SfxBenarPG() { if (sfxBenarPG != null) audioSourceSfx.PlayOneShot(sfxBenarPG); }
+    public void SfxSalahPG() { if (sfxSalahPG != null) audioSourceSfx.PlayOneShot(sfxSalahPG); }
+
+
+    [SerializeField]
+    string SPC5 = "-------SPACE-------";
+    //Audio SFX BS
+    [SerializeField]
+    AudioClip
+        sfxScoreBS,
+        sfxClickBS,
+        sfxRocketBS,
+        sfxConfettiBS,
+        sfxBenarBS,
+        sfxSalahBS;
+
+    public void SfxScoreBS() { if (sfxScoreBS != null) audioSourceSfx.PlayOneShot(sfxScoreBS); }
+    public void SfxClickBS() { if (sfxClickBS != null) audioSourceSfx.PlayOneShot(sfxClickBS); }
+    public void SfxRocketBS() { if (sfxRocketBS != null) audioSourceSfx.PlayOneShot(sfxRocketBS); }
+    public void SfxConfettiBS() { if (sfxConfettiBS != null) audioSourceSfx.PlayOneShot(sfxConfettiBS); }
+    public void SfxBenarBS() { if (sfxBenarBS != null) audioSourceSfx.PlayOneShot(sfxBenarBS); }
+    public void SfxSalahBS() { if (sfxSalahBS != null) audioSourceSfx.PlayOneShot(sfxSalahBS); }
+
+
+    [SerializeField]
+    string SPC6 = "-------SPACE-------";
+    //Audio SFX BS
+    [SerializeField]
+    AudioClip
+        sfxScoreSB,
+        sfxClickSB,
+        sfxRocketSB,
+        sfxConfettiSB,
+        sfxBenarSB,
+        sfxSalahSB,
+        sfxHurufJatuhSB,
+        sfxStarSpraySB;
+
+
+    public void SfxScoreSB() { if (sfxScoreSB != null) audioSourceSfx.PlayOneShot(sfxScoreSB); }
+    public void SfxClickSB() { if (sfxClickSB != null) audioSourceSfx.PlayOneShot(sfxClickSB); }
+    public void SfxRocketSB() { if (sfxRocketSB != null) audioSourceSfx.PlayOneShot(sfxRocketSB); }
+    public void SfxConfettiSB() { if (sfxConfettiSB != null) audioSourceSfx.PlayOneShot(sfxConfettiSB); }
+    public void SfxBenarSB() { if (sfxBenarSB != null) audioSourceSfx.PlayOneShot(sfxBenarSB); }
+    public void SfxSalahSB() { if (sfxSalahSB != null) audioSourceSfx.PlayOneShot(sfxSalahSB); }
+    public void SfxHurufJatuhSB() { if (sfxHurufJatuhSB != null) audioSourceSfx.PlayOneShot(sfxHurufJatuhSB); }
+    public void SfxStarSpraySB() { if (sfxStarSpraySB != null) audioSourceSfx.PlayOneShot(sfxStarSpraySB); }
 
 
     //TesterVolume

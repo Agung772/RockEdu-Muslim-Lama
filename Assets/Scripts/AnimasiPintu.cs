@@ -7,6 +7,9 @@ public class AnimasiPintu : MonoBehaviour
     Animator animator;
     Transform player;
 
+    public string condition;
+    float time;
+
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -15,13 +18,29 @@ public class AnimasiPintu : MonoBehaviour
 
     private void Update()
     {
-        if (Vector3.Distance(transform.position, player.position) < 4.5f)
+        if (time < 1)
         {
-            animator.SetBool("Start", true);
+            time += Time.deltaTime;
         }
-        else
+
+
+        if (Vector3.Distance(transform.position, player.position) < 4.5f && condition != "open")
         {
+            condition = "open";
+            animator.SetBool("Start", true);
+
+            AudioManager.instance.BukaPintu();
+        }
+        else if (Vector3.Distance(transform.position, player.position) > 4.5f && condition != "tutup")
+        {
+            condition = "tutup";
             animator.SetBool("Start", false);
+
+            if (time >= 1)
+            {
+                AudioManager.instance.TutupPintu();
+            }
+
         }
     }
 }

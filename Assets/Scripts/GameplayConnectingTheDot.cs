@@ -105,6 +105,8 @@ public class GameplayConnectingTheDot : MonoBehaviour
             {
                 yield return new WaitForSeconds(1);
                 ButtonManager.instance.SpawnScoreUI(batrai);
+                yield return new WaitForSeconds(2);
+                AudioManager.instance.SfxConfettiBS();
             }
         }
     }
@@ -136,6 +138,8 @@ public class GameplayConnectingTheDot : MonoBehaviour
             {
                 yield return new WaitForSeconds(1);
                 ButtonManager.instance.SpawnScoreUI(batrai);
+                yield return new WaitForSeconds(2);
+                AudioManager.instance.SfxConfettiBS();
             }
 
         }

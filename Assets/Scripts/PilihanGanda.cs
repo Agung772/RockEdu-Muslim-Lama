@@ -99,5 +99,6 @@ public class PilihanGanda : MonoBehaviour
             ButtonManager.instance.nextPertanyaanPG.interactable = true;
         }
 
+        AudioManager.instance.SfxClickPG();
     }
 }

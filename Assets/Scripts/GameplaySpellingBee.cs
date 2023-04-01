@@ -15,7 +15,7 @@ public class GameplaySpellingBee : MonoBehaviour
 
     public int bab, urutanSoal;
     public int baterai = 2;
-    
+    public bool finis;
     public int checkTotal, checkTotalClear;
 
     public List<Bab> babList;
@@ -48,6 +48,16 @@ public class GameplaySpellingBee : MonoBehaviour
         UrutanSoalUI();
     }
 
+    [SerializeField]
+    float resetTime;
+    private void Update()
+    {
+        if (resetTime < 2)
+        {
+            resetTime += Time.deltaTime;
+        }
+    }
+
     public void NextSoal(int bab)
     {
         //Soal udah habis
@@ -64,6 +74,7 @@ public class GameplaySpellingBee : MonoBehaviour
                 ButtonManager.instance.SpawnScoreUI(2);
                 SaveManager.instance.GameSave.SaveScoreMiniGame(SaveManager.instance.GameSave._ScoreSpellingBee, 2);
             }
+            finis = true;
 
         }
         //Lanjut soal berikutnya
@@ -93,33 +104,6 @@ public class GameplaySpellingBee : MonoBehaviour
                 slotHurufController = FindObjectsOfType<SlotHurufController>();
                 hurufController = FindObjectsOfType<HurufController>();
             }
-
-
-            /*
-            //Cari slot huruf
-            AwalslotHurufController = FindObjectsOfType<SlotHurufController>();
-
-            int slotHurufAktif = 0;
-            for (int i = 0; i < AwalslotHurufController.Length; i++)
-            {
-                if (AwalslotHurufController[i].slotHurufAktif)
-                {
-                    slotHurufAktif++;
-                    print(slotHurufAktif);
-                }
-            }
-
-            slotHurufController = new SlotHurufController[slotHurufAktif];
-            int j = 0;
-            for (int i = 0; i < AwalslotHurufController.Length; i++)
-            {
-                if (AwalslotHurufController[i].slotHurufAktif)
-                {
-                    slotHurufController[j] = AwalslotHurufController[i];
-                    j++;
-                }
-            }
-            */
         }
 
  
@@ -149,14 +133,14 @@ public class GameplaySpellingBee : MonoBehaviour
             }
 
             //Semua slot keisi
-            if (slotHurufController.Length == checkTotal)
+            if (slotHurufController.Length == checkTotal && resetTime >= 2)
             {
+                resetTime = 0;
+
                 //Check benar semua
                 if (slotHurufController.Length == checkTotalClear)
                 {
-                    NextSoal(bab);
                     BenarUI();
-                    print("Next");
                 }
 
                 //Reset karena salah
@@ -171,6 +155,7 @@ public class GameplaySpellingBee : MonoBehaviour
                     if (baterai == 0)
                     {
                         ButtonManager.instance.SpawnScoreUI(0);
+                        finis = true;
                     }
 
                     //Reset
@@ -235,9 +220,21 @@ public class GameplaySpellingBee : MonoBehaviour
         StartCoroutine(Coroutine());
         IEnumerator Coroutine()
         {
-            transisiNextSB.SetTrigger("Benar");
-            yield return new WaitForSeconds(3);
-            starSpray.SetActive(true);
+            if (urutanSoal != babList[bab].soal.Length - 1)
+            {
+                transisiNextSB.SetTrigger("Benar");
+                yield return new WaitForSeconds(1);
+                AudioManager.instance.SfxBenarSB();
+                NextSoal(bab);
+                yield return new WaitForSeconds(2);
+                starSpray.SetActive(true);
+                AudioManager.instance.SfxStarSpraySB();
+            }
+            else
+            {
+                NextSoal(bab);
+            }
+
         }
 
     }

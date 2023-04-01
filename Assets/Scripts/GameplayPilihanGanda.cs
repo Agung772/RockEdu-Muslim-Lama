@@ -192,10 +192,26 @@ public class GameplayPilihanGanda : MonoBehaviour
         if (hasil == "Benar")
         {
             transisiNext.SetTrigger("Benar");
+
+            StartCoroutine(CoroutineA());
+            IEnumerator CoroutineA()
+            {
+                yield return new WaitForSeconds(2.5f);
+                AudioManager.instance.SfxBenarPG();
+            }
         }
         else
         {
             transisiNext.SetTrigger("Salah");
+
+            StartCoroutine(CoroutineA());
+            IEnumerator CoroutineA()
+            {
+                yield return new WaitForSeconds(2.5f);
+                AudioManager.instance.SfxSalahPG();
+            }
         }
+
+        AudioManager.instance.SfxRocketPG();
     }
 }

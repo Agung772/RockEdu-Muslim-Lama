@@ -42,7 +42,29 @@ public class ScoreUI : MonoBehaviour
         }
 
         //Audio
-        if (jumlahBintang != 0) AudioManager.instance.SfxScore();
+        if (jumlahBintang != 0) 
+        { 
+            if (GameManager.instance.namaScene.ToString() == "ConnectingTheDot")
+            {
+                AudioManager.instance.SfxScore();
+                AudioManager.instance.SfxConfettiSB();
+            }
+            else if (GameManager.instance.namaScene.ToString() == "SpellingBee")
+            {
+                AudioManager.instance.SfxScoreSB();
+                AudioManager.instance.SfxConfettiSB();
+            }
+            else if (GameManager.instance.namaScene.ToString() == "PilihanGanda")
+            {
+                AudioManager.instance.SfxScorePG();
+                AudioManager.instance.SfxConfettiPG();
+            }
+            else if (GameManager.instance.namaScene.ToString() == "BenarSalah")
+            {
+                AudioManager.instance.SfxScoreBS();
+                AudioManager.instance.SfxConfettiBS();
+            }
+        }
         else AudioManager.instance.SfxGameOver();
     }
 }

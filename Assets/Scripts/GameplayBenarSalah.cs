@@ -172,10 +172,24 @@ public class GameplayBenarSalah : MonoBehaviour
         if (hasil == "Benar")
         {
             transisiNext.SetTrigger("Benar");
+
+            StartCoroutine(CoroutineA());
+            IEnumerator CoroutineA()
+            {
+                yield return new WaitForSeconds(1);
+                AudioManager.instance.SfxBenarBS();
+            }
         }
         else
         {
             transisiNext.SetTrigger("Salah");
+
+            StartCoroutine(CoroutineA());
+            IEnumerator CoroutineA()
+            {
+                yield return new WaitForSeconds(1);
+                AudioManager.instance.SfxSalahBS();
+            }
         }
     }
 }

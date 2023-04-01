@@ -82,5 +82,7 @@ public class BenarSalah : MonoBehaviour
             */
         }
 
+        AudioManager.instance.SfxClickBS();
+
     }
 }
