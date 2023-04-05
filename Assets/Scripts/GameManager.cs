@@ -26,12 +26,13 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        Application.targetFrameRate = 0;
+
 
     }
 
     private void Start()
     {
+        Application.targetFrameRate = 60;
 
         if (namaScene == NamaScene.ConnectingTheDot)
         {

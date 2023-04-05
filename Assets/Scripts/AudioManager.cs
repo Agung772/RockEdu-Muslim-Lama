@@ -48,12 +48,6 @@ public class AudioManager : MonoBehaviour
     }
 
 
-    private void Start()
-    {
-
-
-    }
-
     public void VolumeValueBgm(float value)
     {
         volumeAudioBgm = value;
@@ -80,8 +74,7 @@ public class AudioManager : MonoBehaviour
         volumeSliderSfx.value = volumeAudioSfx;
     }
 
-    [SerializeField]
-    string SPC0 = "-------SPACE-------";
+
     //Audio BGM
     [SerializeField]
     AudioClip
@@ -92,8 +85,6 @@ public class AudioManager : MonoBehaviour
     public void TutupPintu() { if (tutupPintu != null) audioSourceSfx.PlayOneShot(tutupPintu); }
 
 
-    [SerializeField]
-    string SPC1 = "-------SPACE-------";
     //Audio BGM
     [SerializeField]
     AudioClip
@@ -106,8 +97,6 @@ public class AudioManager : MonoBehaviour
     public void BgmHome() { audioSourceBgm.clip = bgmHome; audioSourceBgm.Play(); }
 
 
-    [SerializeField]
-    string SPC2 = "-------SPACE-------";
     //Audio SFX
     [SerializeField]
     AudioClip
@@ -117,8 +106,7 @@ public class AudioManager : MonoBehaviour
     public void SfxUnpause() { if (sfxUnpause != null) audioSourceSfx.PlayOneShot(sfxUnpause); }
 
 
-    [SerializeField]
-    string SPC3 = "-------SPACE-------";
+
     //Audio SFX CTD
     [SerializeField]
     AudioClip
@@ -137,8 +125,7 @@ public class AudioManager : MonoBehaviour
     public void SfxSalah() { if (sfxSalah != null) audioSourceSfx.PlayOneShot(sfxSalah); }
 
 
-    [SerializeField]
-    string SPC4 = "-------SPACE-------";
+
     //Audio SFX PG
     [SerializeField]
     AudioClip
@@ -157,8 +144,7 @@ public class AudioManager : MonoBehaviour
     public void SfxSalahPG() { if (sfxSalahPG != null) audioSourceSfx.PlayOneShot(sfxSalahPG); }
 
 
-    [SerializeField]
-    string SPC5 = "-------SPACE-------";
+
     //Audio SFX BS
     [SerializeField]
     AudioClip
@@ -177,8 +163,6 @@ public class AudioManager : MonoBehaviour
     public void SfxSalahBS() { if (sfxSalahBS != null) audioSourceSfx.PlayOneShot(sfxSalahBS); }
 
 
-    [SerializeField]
-    string SPC6 = "-------SPACE-------";
     //Audio SFX BS
     [SerializeField]
     AudioClip
